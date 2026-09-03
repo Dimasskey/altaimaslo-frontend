@@ -1,0 +1,80 @@
+.toggle {
+  box-sizing: border-box;
+  font-size: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+  background: linear-gradient(135deg, #096ebc 0%, #1DB8DA 100%);
+  font-weight: 500;
+  position: relative;
+  padding: 8px;
+  border-radius: 12px;
+  height: 60px;
+}
+.toggle input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -9999px;
+}
+.toggle input + label {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  box-sizing: border-box;
+  position: relative;
+  line-height: 140%;
+  font-weight: 600;
+  text-align: center;
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: color 0.3s ease 0.1s;
+  z-index: 2;
+  border-radius: 8px;
+  font-size: 1vw;
+}
+.toggle::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: calc(50% - 16px);
+  height: calc(100% - 16px);
+  background: #FFFFFF;
+  border-radius: 8px;
+  transition: transform 0.2s cubic-bezier(0.54, -0.28, 0.42, 1.14);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.toggle.pc-selected::after {
+  transform: translateX(0);
+}
+.toggle.mobile-selected::after {
+  transform: translateX(100%);
+}
+.toggle input:checked + label {
+  color: #4B4B4B;
+  font-weight: 700;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=toggleStyles.css.map */

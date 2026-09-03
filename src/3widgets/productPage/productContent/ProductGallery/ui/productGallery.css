@@ -1,0 +1,48 @@
+/* Error: Undefined mixin.
+ *     ,
+ * 78  | /   @include respond(mobile) {
+ * 79  | |     width: 100%;
+ * 80  | | 
+ * 81  | |     &-container {
+ * 82  | |       height: 83vw;
+ * 83  | |       & .stock_status {
+ * 84  | |         top: -1vw;
+ * 85  | |         left: 2vw;
+ * 86  | |       }
+ * 87  | | 
+ * 88  | |       & .product-card-favorite {
+ * 89  | |         top: 0;
+ * 90  | |         right: 2vw;
+ * 91  | | 
+ * 92  | | 
+ * 93  | |         &__icon {
+ * 94  | |           width: 7vw;
+ * 95  | |         }
+ * 96  | |       }
+ * 97  | | 
+ * 98  | |     }
+ * 99  | | 
+ * 100 | |     &-swiper {
+ * 101 | |       &__slide {
+ * 102 | |         justify-content: center;
+ * 103 | |         height: 82vw;
+ * 104 | |       }
+ * 105 | | 
+ * 106 | |       &__img {
+ * 107 | |         width: 100%;
+ * 108 | |       }
+ * 109 | |     }
+ * 110 | \   }
+ *     '
+ *   productGallery.scss 78:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a     \2577 \a 78  \2502  \250c    @include respond(mobile) {\a 79  \2502  \2502      width: 100%;\a 80  \2502  \2502  \a 81  \2502  \2502      &-container {\a 82  \2502  \2502        height: 83vw;\a 83  \2502  \2502        & .stock_status {\a 84  \2502  \2502          top: -1vw;\a 85  \2502  \2502          left: 2vw;\a 86  \2502  \2502        }\a 87  \2502  \2502  \a 88  \2502  \2502        & .product-card-favorite {\a 89  \2502  \2502          top: 0;\a 90  \2502  \2502          right: 2vw;\a 91  \2502  \2502  \a 92  \2502  \2502  \a 93  \2502  \2502          &__icon {\a 94  \2502  \2502            width: 7vw;\a 95  \2502  \2502          }\a 96  \2502  \2502        }\a 97  \2502  \2502  \a 98  \2502  \2502      }\a 99  \2502  \2502  \a 100 \2502  \2502      &-swiper {\a 101 \2502  \2502        &__slide {\a 102 \2502  \2502          justify-content: center;\a 103 \2502  \2502          height: 82vw;\a 104 \2502  \2502        }\a 105 \2502  \2502  \a 106 \2502  \2502        &__img {\a 107 \2502  \2502          width: 100%;\a 108 \2502  \2502        }\a 109 \2502  \2502      }\a 110 \2502  \2514    }\a     \2575 \a   productGallery.scss 78:3  root stylesheet";
+}

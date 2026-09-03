@@ -1,0 +1,175 @@
+.login-modal.modal-content {
+  width: 23vw;
+  max-height: 24vw;
+  align-items: flex-start;
+  padding-top: 2.4vw;
+  padding-bottom: 2.4vw;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+
+  &.reduced {
+    max-height: 20vw;
+  }
+
+  @include respond(mobile) {
+    width: 75vw;
+    max-height: 70vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+
+    &.reduced {
+      max-height: 54vw;
+    }
+  }
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  &__password-field {
+    overflow: hidden;
+    transition: all 0.5s ease;
+    opacity: 1;
+    max-height: 3.7vw;
+    margin-top: 0.3vw;
+
+    &--hidden {
+      max-height: 0;
+      opacity: 0;
+      margin: 0;
+      pointer-events: none;
+      transition: all 0.5s ease;
+    }
+  }
+
+  &__email {
+    margin-top: 1.88vw;
+  }
+
+  &__password {
+    transition: opacity 0.3s ease;
+  }
+
+  & input {
+    width: 14.7vw;
+    height: 2.2vw;
+    border: 0.1vw solid #4b4b4b;
+    outline: none;
+    font-size: 0.85vw;
+    border-radius: 0.35vw;
+    padding-left: 1vw;
+
+    &::placeholder {
+      color: #898989;
+    }
+  }
+
+  &__forgot {
+    margin-top: 0.5vw;
+    display: flex;
+    width: 14.7vw;
+    justify-content: flex-end;
+
+    &-button {
+      border: none;
+      background-color: transparent;
+      color: var(--button-color);
+      font-size: 0.75vw;
+      cursor: pointer;
+    }
+  }
+
+  &__submit.button-default {
+    margin-top: 1vw;
+    background-color: var(--button-color);
+    width: 14.7vw;
+    height: 2.25vw;
+    color: #fff;
+    border: none;
+    justify-content: center;
+    display: flex;
+    font-size: 1vw;
+
+    &:hover {
+      background-color: var(--button-color-active);
+    }
+  }
+
+
+  &__error {
+    color: red;
+    margin-top: 0.3vw;
+    display: flex;
+    width: 14.7vw;
+    height: 0.78vw;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    font-size: 0.7vw;
+
+    &-visible {
+      opacity: 1;
+    }
+  }
+
+  &__logo {
+    width: 8.2vw;
+    height: auto;
+  }
+
+  @include respond(mobile) {
+    &__logo {
+      width: 26vw;
+    }
+
+    & input {
+      width: 60vw;
+      height: 7vw;
+      font-size: 3vw;
+      border-radius: 1vw;
+      padding-left: 2vw;
+    }
+
+    &__email {
+      margin-top: 5vw;
+    }
+
+    &__error {
+      width: 60vw;
+      height: 4vw;
+      margin-top: 0.5vw;
+      font-size: 3vw;
+    }
+
+    &__password-field {
+      max-height: 12vw;
+      margin-top: 0.75vw;
+
+      &--hidden {
+        max-height: 0;
+      }
+    }
+
+    //&__password {
+    //  margin-top: 0.75vw;
+    //}
+
+    &__forgot {
+      margin-top: 1vw;
+      width: 60vw;
+      &-button {
+        font-size: 3vw;
+      }
+    }
+
+    &__submit.button-default {
+      width: 60vw;
+      height: 7vw;
+      font-size: 3vw;
+      border-radius: 2vw;
+      margin-top: 2vw;
+    }
+  }
+}

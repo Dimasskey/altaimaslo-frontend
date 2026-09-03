@@ -1,0 +1,42 @@
+.button-default {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border-radius: 0.5vw;
+
+  &__img1,
+  &__img2 {
+    transition: all 0.25s ease;
+  }
+
+  &__img1 {
+    width: 0.57vw;
+  }
+
+  &__img2 {
+    width: 1.25vw;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      transform: scale(1.03);
+      filter: brightness(0.97);
+    }
+
+    &:active {
+      transform: scale(0.95);
+      filter: brightness(0.9);
+    }
+  }
+
+  @include respond(mobile) {
+    &__img1 {
+      width: 3vw;
+    }
+
+    &__img2 {
+      width: 5vw;
+    }
+  }
+}

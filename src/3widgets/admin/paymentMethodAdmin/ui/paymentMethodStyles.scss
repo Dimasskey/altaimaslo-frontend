@@ -1,0 +1,43 @@
+.payment-method-admin {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 0 1vw 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.42vw;
+  overflow: hidden;
+
+  &__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.12vw 1.05vw;;
+    border-bottom: 0.1vw solid var(--item-border-color);
+  }
+
+  &__body{
+    display: flex;
+    flex-direction: column;
+    min-height: 5vw;
+  }
+
+  &-title{
+    font-size: 1.7vw;
+    font-weight: 500;
+    color: #4B4B4B;
+  }
+
+  &-button{
+    background-color: #096EBC;
+    color: white;
+    border: none;
+    padding: 0.75vw;
+    gap: 0.5vw;
+    border-radius: 0.45vw;
+    font-size: 0.75vw;
+    &_img{
+      width: 1.25vw;
+    }
+  }
+
+}

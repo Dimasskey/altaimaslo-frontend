@@ -1,0 +1,56 @@
+.usersDeliveryPointsItemAdmin {
+  flex-direction: row;
+  padding: 0.75vw 1.05vw;
+  background-color: var(--item-color);
+  color: black;
+  font-size: 0.85vw;
+  position: relative;
+  font-weight: 500;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1vw;
+  border-bottom: 0.1vw solid #BABABA;
+}
+.usersDeliveryPointsItemAdmin:last-child {
+  border-bottom: none;
+}
+.usersDeliveryPointsItemAdmin-data {
+  font-size: 0.85vw;
+  display: grid;
+  grid-template-columns: 0.15fr 0.8fr 2fr;
+  width: 100%;
+  align-items: center;
+}
+.usersDeliveryPointsItemAdmin-data > div {
+  word-break: break-word;
+}
+.usersDeliveryPointsItemAdmin:hover {
+  background-color: #dddddd;
+}
+.usersDeliveryPointsItemAdmin .buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  align-items: center;
+  font-weight: 500;
+}
+.usersDeliveryPointsItemAdmin .button-accept, .usersDeliveryPointsItemAdmin .button-reject {
+  color: #FFFFFF;
+  border: none;
+  padding: 0.4vw 1.5vw;
+  justify-content: center;
+  width: 100%;
+  font-size: 0.75vw;
+  border-radius: 0.3vw;
+  font-weight: 500;
+}
+.usersDeliveryPointsItemAdmin .button-accept {
+  background-color: #1DB8DA;
+}
+.usersDeliveryPointsItemAdmin .button-reject {
+  background-color: #096EBC;
+}
+
+/*# sourceMappingURL=usersDeliveryPointsItemAdminStyles.css.map */

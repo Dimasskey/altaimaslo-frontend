@@ -1,0 +1,24 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 33 | /   @include respond(mobile) {
+ * 34 | |     &__img1 {
+ * 35 | |       width: 3vw;
+ * 36 | |     }
+ * 37 | | 
+ * 38 | |     &__img2 {
+ * 39 | |       width: 5vw;
+ * 40 | |     }
+ * 41 | \   }
+ *    '
+ *   buttonDefault.scss 33:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 33 \2502  \250c    @include respond(mobile) {\a 34 \2502  \2502      &__img1 {\a 35 \2502  \2502        width: 3vw;\a 36 \2502  \2502      }\a 37 \2502  \2502  \a 38 \2502  \2502      &__img2 {\a 39 \2502  \2502        width: 5vw;\a 40 \2502  \2502      }\a 41 \2502  \2514    }\a    \2575 \a   buttonDefault.scss 33:3  root stylesheet";
+}

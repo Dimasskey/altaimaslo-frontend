@@ -1,0 +1,97 @@
+.add-filters {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 0.42vw;
+  gap: 1.5vw;
+  color: #4B4B4B;
+}
+.add-filters-header {
+  display: flex;
+  font-size: 2vw;
+  gap: 0.5vw;
+  align-items: center;
+  flex-direction: row;
+  padding: 1.12vw 1.05vw;
+}
+.add-filters-header > svg {
+  width: 1.5vw;
+  height: 1.5vw;
+  cursor: pointer;
+}
+.add-filters-title {
+  font-size: 1.75vw;
+  font-weight: 500;
+}
+.add-filters-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  padding: 1.12vw 1.05vw;
+}
+.add-filters-body .input-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2vw;
+}
+.add-filters-body .input-item > label {
+  font-size: 1vw;
+}
+.add-filters-body .input-item > input {
+  border-radius: 0.42vw;
+  border: 0.1vw solid #4B4B4B;
+  padding: 1%;
+}
+.add-filters-body .input-item > input:focus-visible {
+  border: 0.1vw solid #0585D0;
+  outline: none;
+}
+.add-filters-body .input-item .custom-select__button {
+  font-size: 1vw;
+}
+.add-filters-select {
+  padding: 1%;
+  border-radius: 0.42vw;
+  font-weight: 500;
+  font-size: 0.8vw;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 13vw;
+  outline: none;
+  border: 0.1vw solid #4B4B4B;
+}
+.add-filters-select .custom-select__button {
+  justify-content: space-between;
+  color: #4B4B4B;
+}
+.add-filters-select svg > path {
+  fill: #4B4B4B;
+}
+.add-filters-saveButton {
+  padding: 0.8vw 1.5vw;
+  justify-content: center;
+  background-color: #096EBC;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0.3vw;
+  font-size: 0.8vw;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-end;
+  width: auto;
+  min-width: 8vw;
+}
+.add-filters-saveButton:hover {
+  background-color: #085a9c;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.add-filters-saveButton:active {
+  transform: translateY(0);
+}
+
+/*# sourceMappingURL=addFiltersAdminStyles.css.map */

@@ -1,0 +1,64 @@
+.information{
+
+  &-wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 0 1vw 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0.42vw;
+    overflow: hidden;
+
+    path{
+      fill: white;
+    }
+  }
+
+  &-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.12vw 1.05vw;
+    border-bottom: 0.1vw solid #BABABA;
+  }
+
+  &-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75vw;
+    padding: 1.12vw 1.05vw;;
+    min-height: 20vw;
+  }
+
+  &-save-btn{
+    background-color: #096EBC;
+    color: white;
+    border: none;
+    padding: 0.5vw 3.5vw;
+    gap: 0.5vw;
+    border-radius: 0.45vw;
+    font-size: 0.75vw;
+    width: fit-content;
+  }
+
+  &-select{
+    background-color: #626262;
+    color: white;
+    padding: 1%;
+    border-radius: 0.42vw;
+    width: 30%;
+    font-weight: 500;
+    font-size: 0.8vw;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 13vw;
+    border: none;
+    outline: none;
+
+    .custom-select__button {
+      color: white;
+    }
+  }
+}

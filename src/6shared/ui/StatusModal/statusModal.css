@@ -1,0 +1,51 @@
+/* Error: Undefined mixin.
+ *     ,
+ * 83  | /   @include respond(mobile) {
+ * 84  | |     padding: 2.5vw 5vw;
+ * 85  | |     width: 90%;
+ * 86  | |     .status-content {
+ * 87  | |       gap: 3vw;
+ * 88  | | 
+ * 89  | |       .status-image {
+ * 90  | |         width: 50vw;
+ * 91  | |       }
+ * 92  | | 
+ * 93  | |       .status-title {
+ * 94  | |         font-size: 7vw;
+ * 95  | |       }
+ * 96  | | 
+ * 97  | |       .status-message {
+ * 98  | |         font-size: 4vw;
+ * 99  | |       }
+ * 100 | | 
+ * 101 | |       .status-actions {
+ * 102 | |         gap: 2vw;
+ * 103 | | 
+ * 104 | |         &__confirm,
+ * 105 | |         &__close,
+ * 106 | |         &__cancel {
+ * 107 | |           display: flex;
+ * 108 | |           justify-content: center;
+ * 109 | |           padding: 1vw 5vw;
+ * 110 | |           border-radius: 1.5vw;
+ * 111 | | 
+ * 112 | |           color: white;
+ * 113 | |           background-color: #0585D0;
+ * 114 | |           font-size: 5vw;
+ * 115 | |         }
+ * 116 | |       }
+ * 117 | |     }
+ * 118 | \   }
+ *     '
+ *   statusModal.scss 83:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a     \2577 \a 83  \2502  \250c    @include respond(mobile) {\a 84  \2502  \2502      padding: 2.5vw 5vw;\a 85  \2502  \2502      width: 90%;\a 86  \2502  \2502      .status-content {\a 87  \2502  \2502        gap: 3vw;\a 88  \2502  \2502  \a 89  \2502  \2502        .status-image {\a 90  \2502  \2502          width: 50vw;\a 91  \2502  \2502        }\a 92  \2502  \2502  \a 93  \2502  \2502        .status-title {\a 94  \2502  \2502          font-size: 7vw;\a 95  \2502  \2502        }\a 96  \2502  \2502  \a 97  \2502  \2502        .status-message {\a 98  \2502  \2502          font-size: 4vw;\a 99  \2502  \2502        }\a 100 \2502  \2502  \a 101 \2502  \2502        .status-actions {\a 102 \2502  \2502          gap: 2vw;\a 103 \2502  \2502  \a 104 \2502  \2502          &__confirm,\a 105 \2502  \2502          &__close,\a 106 \2502  \2502          &__cancel {\a 107 \2502  \2502            display: flex;\a 108 \2502  \2502            justify-content: center;\a 109 \2502  \2502            padding: 1vw 5vw;\a 110 \2502  \2502            border-radius: 1.5vw;\a 111 \2502  \2502  \a 112 \2502  \2502            color: white;\a 113 \2502  \2502            background-color: #0585D0;\a 114 \2502  \2502            font-size: 5vw;\a 115 \2502  \2502          }\a 116 \2502  \2502        }\a 117 \2502  \2502      }\a 118 \2502  \2514    }\a     \2575 \a   statusModal.scss 83:3  root stylesheet";
+}

@@ -1,0 +1,251 @@
+.orders {
+  background-color: #fff;
+  width: 100%;
+  height: fit-content;
+  border-radius: 0.5vw;
+  overflow: visible;
+
+  &-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    padding: 1.5vw 1.25vw 1vw 1.25vw;
+
+  }
+
+  &-title {
+    font-size: 1.5vw;
+    color: #4B4B4B;
+  }
+
+  @include respond(mobile) {
+    border-radius: 0;
+
+    &-header {
+      padding: 2.5vw 1.25vw 2.5vw 3vw;
+      gap: 2vw;
+
+      .custom-select.border {
+
+      }
+    }
+
+    &-title {
+      font-size: 4vw;
+    }
+
+  }
+}
+
+.orders-table {
+  &-empty {
+    font-size: 1vw;
+    text-align: center;
+    padding: 2%;
+    border-top: 0.1vw solid gray;
+  }
+
+  &-header {
+    font-size: 0.8vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr 1.5fr 0.5fr;
+    color: #898989;
+    padding: 0 1.25vw;
+    margin-bottom: 0.5vw;
+  }
+
+  &-column {
+    font-size: 0.8vw;
+
+
+  }
+
+  &-body {
+
+    .orders-table-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1.5fr 1.5fr 0.5fr;
+      background-color: #F4F4F4;
+      padding: 0 1.25vw;
+      font-size: 0.8vw;
+      align-items: center;
+      height: 4vw;
+
+      &:hover {
+        background-color: #f8f9fa;
+      }
+    }
+  }
+
+
+  &-column,
+  &-cell {
+    &:first-child {
+      justify-self: start;
+      color: #898989;
+      align-items: center;
+    }
+
+    &:not(:first-child):not(:last-child) {
+      justify-self: center;
+    }
+
+    &:last-child {
+      justify-self: end;
+    }
+
+  }
+
+  &-cell {
+    color: #4B4B4B;
+    padding: 0.5vw 0;
+
+    &__pdf {
+      width: 2vw;
+    }
+  }
+
+  .pdf-icon {
+    position: relative;
+    width: 2vw;
+    height: 2vw;
+
+    img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      transition:
+              opacity 0.25s ease,
+              transform 0.25s ease;
+    }
+
+    &__pdf {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    &__check {
+      opacity: 0;
+      transform: scale(0.6);
+    }
+
+    &--done {
+      cursor: default;
+
+      .pdf-icon__pdf {
+        opacity: 0;
+        transform: scale(0.6);
+      }
+
+      .pdf-icon__check {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+
+
+  @include respond(mobile) {
+    .orders-table-empty {
+      font-size: 4vw;
+      text-align: center;
+      padding: 5%;
+      border-top: 0.1vw solid gray;
+    }
+    &-body {
+
+      .order-mobile {
+        display: flex;
+        justify-content: space-between;
+        padding: 2.5vw 5vw 2.5vw 3vw;
+        color: #4B4B4B;
+        border-bottom: 0.1vw solid #4B4B4B;
+
+        &-left {
+          display: flex;
+          flex-direction: column;
+          gap: 2vw;
+        }
+
+        &-right {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
+        &__number {
+          font-size: 3vw;
+        }
+
+        &__date {
+          font-size: 3vw;
+          color: #898989;
+        }
+
+        &__status {
+          display: flex;
+          justify-content: center;
+          padding: 1vw 1.3vw;
+          border-radius: 1vw;
+          font-size: 2.5vw;
+          width: 20vw;
+        }
+
+        &__amount {
+          font-size: 3vw;
+          text-align: end;
+        }
+
+        &__download {
+          display: flex;
+          align-items: center;
+          gap: 1vw;
+
+          &-img {
+            width: 5vw;
+          }
+
+          .pdf-icon {
+            width: 6vw;
+            height: 6vw;
+          }
+
+          &-text {
+            font-size: 2.5vw;
+            color: #0585D0;
+            border: none;
+            background: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  padding: 0.3vw 0.8vw;
+  border-radius: 0.5vw;
+  font-size: 0.7vw;
+  font-weight: 500;
+  width: 7.5vw;
+  background-color: #f8d7da;
+  color: #721c24;
+
+  &-доставлен {
+    background-color: #d4edda;
+    color: #155724;
+  }
+
+  &-в-обработке {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+
+  &-отменен {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+}

@@ -1,0 +1,58 @@
+.contact-block {
+  margin-top: 1.5vw;
+  color: #4B4B4B;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25vw;
+
+  &__title {
+    font-size: 1vw;
+    font-weight: bold;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    font-size: 0.8vw;
+  }
+
+  &-row {
+    display: flex;
+    flex-direction: row;
+    & label {
+      color: #898989;
+      width: 8vw;
+    }
+    & span {
+      word-break: break-all;
+      width: 70%;
+    }
+  }
+
+  @include respond(mobile) {
+    margin-top: 3vw;
+    gap: 3vw;
+
+    &__title {
+      font-size: 3vw;
+    }
+
+    &-container {
+      font-size: 2.5vw;
+      gap: 2.5vw;
+    }
+
+    &-row {
+      & label {
+        width: 25vw;
+
+      }
+
+      & span {
+        width: 65%;
+        word-break: break-all;
+      }
+    }
+  }
+}

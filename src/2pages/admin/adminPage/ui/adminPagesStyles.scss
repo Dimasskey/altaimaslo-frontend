@@ -1,0 +1,20 @@
+.admin_page {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+
+  &-body{
+  width: 100%;
+  gap: 2vw;
+  display: flex;
+  flex-direction: row;
+  }
+
+  &-content{
+    width: 50vw;
+    grid-area: content-wrapper;
+  }
+
+}
+
+

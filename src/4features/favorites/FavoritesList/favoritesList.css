@@ -1,0 +1,46 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 53 | /   @include respond(mobile) {
+ * 54 | |     &-header {
+ * 55 | |       padding: 3vw 3vw 3vw 3vw;
+ * 56 | |       gap: 4.5vw;
+ * 57 | |       margin: 0;
+ * 58 | | 
+ * 59 | |       .header-title {
+ * 60 | |         font-size: 4vw;
+ * 61 | |         line-height: 1.25;
+ * 62 | | 
+ * 63 | |         & div {
+ * 64 | |           display: flex;
+ * 65 | |           align-items: center;
+ * 66 | |           gap: 3vw;
+ * 67 | |         }
+ * 68 | | 
+ * 69 | |         &__count {
+ * 70 | |           color: #898989;
+ * 71 | |           font-size: 2.5vw;
+ * 72 | | 
+ * 73 | |         }
+ * 74 | | 
+ * 75 | |         &__clear {
+ * 76 | |           background: none;
+ * 77 | |           border: none;
+ * 78 | |           color: #0585D0;
+ * 79 | |           font-size: 3vw;
+ * 80 | |         }
+ * 81 | |       }
+ * 82 | |     }
+ * 83 | \   }
+ *    '
+ *   favoritesList.scss 53:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 53 \2502  \250c    @include respond(mobile) {\a 54 \2502  \2502      &-header {\a 55 \2502  \2502        padding: 3vw 3vw 3vw 3vw;\a 56 \2502  \2502        gap: 4.5vw;\a 57 \2502  \2502        margin: 0;\a 58 \2502  \2502  \a 59 \2502  \2502        .header-title {\a 60 \2502  \2502          font-size: 4vw;\a 61 \2502  \2502          line-height: 1.25;\a 62 \2502  \2502  \a 63 \2502  \2502          & div {\a 64 \2502  \2502            display: flex;\a 65 \2502  \2502            align-items: center;\a 66 \2502  \2502            gap: 3vw;\a 67 \2502  \2502          }\a 68 \2502  \2502  \a 69 \2502  \2502          &__count {\a 70 \2502  \2502            color: #898989;\a 71 \2502  \2502            font-size: 2.5vw;\a 72 \2502  \2502  \a 73 \2502  \2502          }\a 74 \2502  \2502  \a 75 \2502  \2502          &__clear {\a 76 \2502  \2502            background: none;\a 77 \2502  \2502            border: none;\a 78 \2502  \2502            color: #0585D0;\a 79 \2502  \2502            font-size: 3vw;\a 80 \2502  \2502          }\a 81 \2502  \2502        }\a 82 \2502  \2502      }\a 83 \2502  \2514    }\a    \2575 \a   favoritesList.scss 53:3  root stylesheet";
+}

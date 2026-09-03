@@ -1,0 +1,225 @@
+.filter-sidebar {
+  width: 20%;
+  background-color: #fff;
+  border-radius: 0.5vw;
+  position: sticky;
+  top: 6vw;
+  color: #4b4b4b;
+  height: fit-content;
+  transition: height 0.5s ease;
+  max-height: 42vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  @include respond(mobile) {
+    width: 100%;
+    max-height: none;
+    position: relative;
+    top: 0;
+  }
+}
+
+.filter {
+  &-title {
+    font-size: 1.3vw;
+    padding: 1vw 1vw 0 1vw;
+    flex-shrink: 0;
+  }
+
+  &-scroll {
+    overflow-y: auto;
+    flex: 1;
+    margin-top: 0.5vw;
+    scrollbar-gutter: stable;
+
+    &::-webkit-scrollbar {
+      width: 0.5vw;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+      border-radius: 0.5vw;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 0.5vw;
+      transition: background 0.3s ease;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  &-groups {
+    margin-top: 0.9vw;
+    display: flex;
+    gap: 0.5vw;
+
+    flex-direction: column;
+    padding: 0 1vw 0 1vw;
+    &-empty {
+      font-size: 1vw;
+    }
+  }
+
+  &-group {
+    margin-top: .5vw;
+    display: flex;
+    gap: .25vw;
+    flex-direction: column;
+    padding: 0 1vw;
+
+    &__title {
+      display: flex;
+      font-size: 1vw;
+      gap: 1vw;
+      flex-direction: row;
+      align-items: center;
+      cursor: pointer;
+      justify-content: space-between;
+      background-color: #fff;
+      border: none;
+      color: #4B4B4B;
+
+      .arrow {
+        width: 0.5vw;
+        transform: rotate(270deg);
+        transition: transform 0.3s ease;
+
+        &.open {
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    .filter-group__content {
+      font-size: 0.75vw;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75vw;
+      overflow: hidden;
+      margin-top: 0.5vw;
+
+      opacity: 0;
+      transform: translateY(-8px);
+      pointer-events: none;
+
+      transition: all 0.2s ease;
+
+      &.open {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+
+      &.closing {
+        opacity: 0;
+        transform: translateY(-8px);
+      }
+    }
+  }
+
+  &-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75vw;
+    padding: 1vw 0.5vw 1vw 0.5vw;
+    flex-shrink: 0;
+
+    &__clear {
+      font-size: 1vw;
+      padding: 0.5vw 2vw;
+      color: #fff;
+      background-color: #096ebc;
+    }
+
+    &__confirm {
+      font-size: 0.8vw;
+      padding: 0.5vw 2vw;
+      color: #fff;
+      background-color: #096ebc;
+    }
+  }
+
+  @include respond(mobile) {
+    &-title {
+      font-size: 5vw;
+      padding: 5vw 1vw 0 5vw;
+      font-weight: bold;
+    }
+
+    &-scroll {
+      margin-top: 2vw;
+      overflow-y: auto;
+      max-height: 81.5dvh;
+
+      &::-webkit-scrollbar {
+        width: 2vw;
+      }
+
+      &::-webkit-scrollbar-track {
+        border-radius: 1vw;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 1vw;
+      }
+    }
+
+    &-group {
+      margin-top: 3vw;
+      gap: 2vw;
+      padding: 0 4vw 0 5vw;
+
+      &__title {
+        font-size: 4vw;
+        .arrow {
+          width: 2vw;
+          transform: rotate(90deg);
+          transition: transform 0.3s ease;
+
+          &.open {
+            transform: rotate(270deg);
+          }
+        }
+      }
+
+      .filter-group__content {
+        font-size: 2.5vw;
+        gap: 3vw;
+        margin-top: 1vw;
+      }
+    }
+
+
+
+    &-actions {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+      padding: 2vw 5vw 5vw 5vw;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 10%;
+
+      &__clear {
+        display: flex;
+        justify-content: center;
+        height: 85%;
+        width: 100%;
+        font-size: 4vw;
+        color: #fff;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        border-radius: 2vw;
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+.category_admin{
+
+  &-item{
+    display: flex;
+    padding: 0.5vw 1.55vw;
+    justify-content: space-between;
+    color: #4B4B4B;
+    align-items: center;
+    border-bottom: 0.1vw solid var(--item-border-color);
+    background-color: var(--item-color);
+
+    &:hover {
+      background-color: var(--item-color-hover);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      cursor: grabbing;
+    }
+
+    &.drag-over {
+      border: 2px dashed #2196f3;
+      background: #f0f8ff;
+    }
+
+    &-content{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &_dragHandle {
+      cursor: grab;
+      padding: 8px;
+      margin-right: 0.5vw;
+      border-radius: 0.42vw;
+      transition: background-color 0.2s;
+      fill: #ffffff;
+
+      &:hover {
+        background-color: var(--item-color-hover);
+      }
+
+      &:active {
+        cursor: grabbing;
+      }
+
+      svg {
+        height: 1.2vw;
+        width: 1.2vw;
+        color: #0585D0;
+      }
+    }
+
+    &_ImgAndName{
+      display: flex;
+      gap: 1vw;
+
+      &-Img{
+        width: 2vw;
+        height: 2vw;
+      }
+
+      &-Name{
+        font-size: 0.85vw;
+        font-weight: 500;
+        line-height: 2vw;
+      }
+
+    }
+
+    &_RedactAndRemove{
+      display: flex;
+      gap: 1vw;
+      font-size: 0.85vw;
+      font-weight: 500;
+
+      &-Redact{
+        color: #0585D0;
+        cursor: pointer;
+      }
+
+      &-Remove{
+        color: #C60000;
+        cursor: pointer;
+      }
+
+    }
+  }
+
+}
+
+.category_admin-no-categories {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 16px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.category_admin-saving {
+  background: linear-gradient(272deg, #3bbd4f, #369f46);
+  color: #ffffff;
+  padding: 0.5vw 4vw;
+  border-radius: 0.25vw;
+  text-align: center;
+  font-weight: 500;
+
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 10000;
+
+  opacity: 0;
+  animation: smoothSlideInOutCenter 2.5s ease-in-out forwards;
+}
+
+@keyframes smoothSlideInOutCenter {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-60%);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-60%);
+  }
+}

@@ -1,0 +1,81 @@
+.product_list_item{
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  padding: 1vw;
+  background-color: #FFFFFF;
+  border-radius: 0.42vw;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  &-info{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+
+    .img-container{
+      padding: 0.5vw;
+      background-color: #FFFFFF;
+      border-radius: 0.5vw;
+      box-shadow: 0 0 1vw 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .img{
+      width: 7vw;
+      height: 7vw;
+    }
+
+    .name{
+      font-size: 1.05vw;
+    }
+  }
+
+  &-plus{
+    display: flex;
+    padding: 1vw;
+    background-color: #FFFFFF;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 1vw 0 rgba(0, 0, 0, 0.2);
+
+    &>svg{
+      width: 1.25vw;
+      height: 1.25vw;
+
+      path {
+        fill: #0585D0;
+        width: 2vw;
+        height: 2vw;
+      }
+    }
+
+  }
+
+  &-checkmark-svg{
+    display: flex;
+    padding: 1vw;
+    background-color: #1DB8DA;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 1vw 0 rgba(0, 0, 0, 0.2);
+
+    &>svg{
+      width: 1.25vw;
+      height: 1.25vw;
+
+      path {
+        fill: #FFFFFF;
+        width: 2vw;
+        height: 2vw;
+      }
+    }
+  }
+
+}
+

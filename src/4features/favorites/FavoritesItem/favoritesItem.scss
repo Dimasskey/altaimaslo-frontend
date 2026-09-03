@@ -1,0 +1,141 @@
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.favorites-item {
+  border-top: 0.1vw solid #BABABA;
+  display: flex;
+  justify-content: space-between;
+  height: 12vw;
+  padding-right: 1vw;
+
+  animation: slideIn 0.75s ease-out forwards;
+  opacity: 0;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+    .item-info-img {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      .item-info__image {
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+      }
+    }
+
+    .item-info-description {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 0.5vw;
+      width: 75%;
+
+      .info-description__name {
+        font-size: 0.8vw;
+        padding-top: 1vw;
+        cursor: pointer;
+      }
+
+      .add-to-cart-btn {
+        width: 100%;
+      }
+    }
+
+  .favorites-actions {
+    width: 45%;
+
+    .product-counter {
+      grid-template-rows: 1fr 0.5fr;
+      row-gap: 1vw;
+
+      &-actions {
+        margin: 0;
+      }
+    }
+  }
+
+  @include respond(mobile) {
+    padding-right: 2vw;
+    height: 28vw;
+    justify-content: space-between;
+
+    .item-info-img {
+      width: 30%;
+    }
+
+    .item-info-description {
+      flex-direction: column;
+      width: 70%;
+
+      .info-description__name {
+        font-size: 2.5vw;
+      }
+
+      .favorites-actions {
+        width: 100%;
+
+        .product-counter-price {
+          .counter-price-current {
+            flex-direction: row;
+            align-items: center;
+            gap: 1vw;
+          }
+        }
+
+        .item-actions-buttons {
+          justify-content: flex-end;
+        }
+
+        .product-counter-actions {
+          display: flex;
+          flex-direction: row;
+          margin-top: 2vw;
+          gap: 2vw;
+          justify-content: space-between;
+
+          .product-counter-count {
+            width: 50%;
+            .counter-count__plus,.counter-count__minus {
+              width: 35%;
+            }
+          }
+
+          .add-to-cart-wrapper {
+            width: 50%;
+
+            .button-default__img1 {
+              width: 2.5vw;
+            }
+
+            .button-default__img2 {
+              width: 4vw;
+            }
+
+            .add-to-cart-btn.added {
+              .button-default__img1 {
+                width: 4vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

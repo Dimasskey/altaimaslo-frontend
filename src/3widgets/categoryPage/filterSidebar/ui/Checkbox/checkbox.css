@@ -1,0 +1,41 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 64 | /   @include respond(mobile) {
+ * 65 | |     &__input {
+ * 66 | |       width: 4vw;
+ * 67 | |       height: 4vw;
+ * 68 | |     }
+ * 69 | | 
+ * 70 | |     &__label {
+ * 71 | |       gap: 3vw;
+ * 72 | |     }
+ * 73 | | 
+ * 74 | |     &__mark {
+ * 75 | |       width: 4vw;
+ * 76 | |       height: 4vw;
+ * 77 | |       border-radius: 0.5vw;
+ * 78 | | 
+ * 79 | |       &:after {
+ * 80 | |         left: 1.3vw;
+ * 81 | |         top: 0.3vw;
+ * 82 | |         width: 1.5vw;
+ * 83 | |         height: 2.5vw;
+ * 84 | |         border-width: 0 0.6vw 0.6vw 0;
+ * 85 | |       }
+ * 86 | |     }
+ * 87 | | 
+ * 88 | | 
+ * 89 | \   }
+ *    '
+ *   checkbox.scss 64:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 64 \2502  \250c    @include respond(mobile) {\a 65 \2502  \2502      &__input {\a 66 \2502  \2502        width: 4vw;\a 67 \2502  \2502        height: 4vw;\a 68 \2502  \2502      }\a 69 \2502  \2502  \a 70 \2502  \2502      &__label {\a 71 \2502  \2502        gap: 3vw;\a 72 \2502  \2502      }\a 73 \2502  \2502  \a 74 \2502  \2502      &__mark {\a 75 \2502  \2502        width: 4vw;\a 76 \2502  \2502        height: 4vw;\a 77 \2502  \2502        border-radius: 0.5vw;\a 78 \2502  \2502  \a 79 \2502  \2502        &:after {\a 80 \2502  \2502          left: 1.3vw;\a 81 \2502  \2502          top: 0.3vw;\a 82 \2502  \2502          width: 1.5vw;\a 83 \2502  \2502          height: 2.5vw;\a 84 \2502  \2502          border-width: 0 0.6vw 0.6vw 0;\a 85 \2502  \2502        }\a 86 \2502  \2502      }\a 87 \2502  \2502  \a 88 \2502  \2502  \a 89 \2502  \2514    }\a    \2575 \a   checkbox.scss 64:3  root stylesheet";
+}

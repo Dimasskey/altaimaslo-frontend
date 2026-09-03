@@ -1,0 +1,21 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 15 | /   @include respond(mobile) {
+ * 16 | |     width: 100%;
+ * 17 | |     max-height: none;
+ * 18 | |     position: relative;
+ * 19 | |     top: 0;
+ * 20 | \   }
+ *    '
+ *   filterSidebar.scss 15:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 15 \2502  \250c    @include respond(mobile) {\a 16 \2502  \2502      width: 100%;\a 17 \2502  \2502      max-height: none;\a 18 \2502  \2502      position: relative;\a 19 \2502  \2502      top: 0;\a 20 \2502  \2514    }\a    \2575 \a   filterSidebar.scss 15:3  root stylesheet";
+}

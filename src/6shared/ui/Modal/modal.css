@@ -1,0 +1,20 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 60 | /     @include respond(mobile) {
+ * 61 | |       width: 10vw;
+ * 62 | |       height: auto;
+ * 63 | |       right: 1vw;
+ * 64 | \     }
+ *    '
+ *   modal.scss 60:5  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 60 \2502  \250c      @include respond(mobile) {\a 61 \2502  \2502        width: 10vw;\a 62 \2502  \2502        height: auto;\a 63 \2502  \2502        right: 1vw;\a 64 \2502  \2514      }\a    \2575 \a   modal.scss 60:5  root stylesheet";
+}

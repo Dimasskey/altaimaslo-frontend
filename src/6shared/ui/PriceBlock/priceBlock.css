@@ -1,0 +1,34 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 42 | /   @include respond(mobile) {
+ * 43 | |     gap: 0.75vw;
+ * 44 | |     .counter-price__old {
+ * 45 | |       font-size: 2.5vw;
+ * 46 | |     }
+ * 47 | | 
+ * 48 | |     .counter-price-current {
+ * 49 | |       font-size: 3.5vw;
+ * 50 | | 
+ * 51 | |       &__value {
+ * 52 | |         padding: 0.75vw 1.25vw;
+ * 53 | |         border-radius: 1vw;
+ * 54 | |       }
+ * 55 | | 
+ * 56 | |       &__perOne {
+ * 57 | |         font-size: 2vw;
+ * 58 | |       }
+ * 59 | |     }
+ * 60 | \   }
+ *    '
+ *   priceBlock.scss 42:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 42 \2502  \250c    @include respond(mobile) {\a 43 \2502  \2502      gap: 0.75vw;\a 44 \2502  \2502      .counter-price__old {\a 45 \2502  \2502        font-size: 2.5vw;\a 46 \2502  \2502      }\a 47 \2502  \2502  \a 48 \2502  \2502      .counter-price-current {\a 49 \2502  \2502        font-size: 3.5vw;\a 50 \2502  \2502  \a 51 \2502  \2502        &__value {\a 52 \2502  \2502          padding: 0.75vw 1.25vw;\a 53 \2502  \2502          border-radius: 1vw;\a 54 \2502  \2502        }\a 55 \2502  \2502  \a 56 \2502  \2502        &__perOne {\a 57 \2502  \2502          font-size: 2vw;\a 58 \2502  \2502        }\a 59 \2502  \2502      }\a 60 \2502  \2514    }\a    \2575 \a   priceBlock.scss 42:3  root stylesheet";
+}

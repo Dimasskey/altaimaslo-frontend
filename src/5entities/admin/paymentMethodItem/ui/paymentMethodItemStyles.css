@@ -1,0 +1,58 @@
+.container_content {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  padding: 0.5vw 1.05vw;
+  background-color: var(--item-color);
+  border-bottom: 0.1vw solid var(--item-border-color);
+}
+.container_content:last-child {
+  border-bottom: none;
+}
+.container_content:hover {
+  background-color: var(--item-color-hover);
+}
+.container_content .container_content_info {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.42vw;
+  width: 100%;
+}
+.container_content-count {
+  font-size: 1vw;
+  font-weight: 600;
+  padding-top: 0.15vw;
+  color: #4B4B4B;
+  line-height: 1vw;
+}
+.container_content-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5vw;
+  font-size: 1vw;
+}
+.container_content-item--data {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5vw;
+}
+.container_content_buttons-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1vw;
+}
+.container_content .container_content-item_button-edit {
+  color: #0585D0;
+  cursor: pointer;
+  position: relative;
+  font-size: 0.85vw;
+}
+.container_content .container_content-item_button-remove {
+  color: #C60000;
+  cursor: pointer;
+  font-size: 0.85vw;
+}
+
+/*# sourceMappingURL=paymentMethodItemStyles.css.map */

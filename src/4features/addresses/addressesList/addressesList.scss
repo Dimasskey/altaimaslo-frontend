@@ -1,0 +1,36 @@
+.addresses-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 1.25vw 1vw 1.25vw;
+
+  &__title {
+    font-size: 1.5vw;
+  }
+
+  &__button {
+    padding: 0.5vw 1.5vw;
+    gap: 0.5vw;
+    background-color: #0499f4;
+    color: white;
+    font-size: 0.85vw;
+  }
+
+  @include respond(mobile) {
+    padding: 2vw 3.25vw 2vw 3.25vw;
+
+    &__title {
+      font-size: 4vw;
+    }
+
+    &__button {
+      padding: 1.5vw 2.5vw;
+      font-size: 0.85vw;
+      border-radius: 1vw;
+
+      &-icon {
+        width: 2vw;
+      }
+    }
+  }
+}

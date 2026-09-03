@@ -1,0 +1,119 @@
+.category_admin-item {
+  display: flex;
+  padding: 0.5vw 1.55vw;
+  justify-content: space-between;
+  color: #4B4B4B;
+  align-items: center;
+  border-bottom: 0.1vw solid var(--item-border-color);
+  background-color: var(--item-color);
+}
+.category_admin-item:hover {
+  background-color: var(--item-color-hover);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.category_admin-item:active {
+  cursor: grabbing;
+}
+.category_admin-item.drag-over {
+  border: 2px dashed #2196f3;
+  background: #f0f8ff;
+}
+.category_admin-item-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.category_admin-item_dragHandle {
+  cursor: grab;
+  padding: 8px;
+  margin-right: 0.5vw;
+  border-radius: 0.42vw;
+  transition: background-color 0.2s;
+  fill: #ffffff;
+}
+.category_admin-item_dragHandle:hover {
+  background-color: var(--item-color-hover);
+}
+.category_admin-item_dragHandle:active {
+  cursor: grabbing;
+}
+.category_admin-item_dragHandle svg {
+  height: 1.2vw;
+  width: 1.2vw;
+  color: #0585D0;
+}
+.category_admin-item_ImgAndName {
+  display: flex;
+  gap: 1vw;
+}
+.category_admin-item_ImgAndName-Img {
+  width: 2vw;
+  height: 2vw;
+}
+.category_admin-item_ImgAndName-Name {
+  font-size: 0.85vw;
+  font-weight: 500;
+  line-height: 2vw;
+}
+.category_admin-item_RedactAndRemove {
+  display: flex;
+  gap: 1vw;
+  font-size: 0.85vw;
+  font-weight: 500;
+}
+.category_admin-item_RedactAndRemove-Redact {
+  color: #0585D0;
+  cursor: pointer;
+}
+.category_admin-item_RedactAndRemove-Remove {
+  color: #C60000;
+  cursor: pointer;
+}
+
+.category_admin-no-categories {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 16px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.category_admin-saving {
+  background: linear-gradient(272deg, #3bbd4f, #369f46);
+  color: #ffffff;
+  padding: 0.5vw 4vw;
+  border-radius: 0.25vw;
+  text-align: center;
+  font-weight: 500;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 10000;
+  opacity: 0;
+  animation: smoothSlideInOutCenter 2.5s ease-in-out forwards;
+}
+
+@keyframes smoothSlideInOutCenter {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-60%);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-60%);
+  }
+}
+
+/*# sourceMappingURL=categoryItemAdminStyles.css.map */

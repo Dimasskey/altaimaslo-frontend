@@ -1,0 +1,49 @@
+.users-list-admin-page{
+
+  &-item{
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr 0.6fr 0.6fr;
+    padding: 0.75vw 1.05vw;
+    gap: 0.75vw;
+    background-color: var(--item-color);
+    color: black;
+    font-size: 0.85vw;
+    position: relative;
+    border-bottom: 0.1vw solid var(--item-border-color);
+
+    &:last-child{
+      border-bottom: none;
+    }
+
+    &:hover{
+      background-color: var(--item-color-hover);
+    }
+
+    .organization{
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    &_button-info{
+      color: #0585D0;
+      cursor: pointer;
+      font-size: 0.85vw;
+    }
+
+    &_button-remove{
+      color: #C60000;
+      cursor: pointer;
+      font-size: 0.85vw;
+    }
+  }
+
+}
+
+.user-detail-info-container{
+  position: absolute;
+  z-index: 1000;
+  top: 2.5vw;
+  left: 19vw;
+}

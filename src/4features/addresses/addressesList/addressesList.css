@@ -1,0 +1,32 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 19 | /   @include respond(mobile) {
+ * 20 | |     padding: 2vw 3.25vw 2vw 3.25vw;
+ * 21 | | 
+ * 22 | |     &__title {
+ * 23 | |       font-size: 4vw;
+ * 24 | |     }
+ * 25 | | 
+ * 26 | |     &__button {
+ * 27 | |       padding: 1.5vw 2.5vw;
+ * 28 | |       font-size: 0.85vw;
+ * 29 | |       border-radius: 1vw;
+ * 30 | | 
+ * 31 | |       &-icon {
+ * 32 | |         width: 2vw;
+ * 33 | |       }
+ * 34 | |     }
+ * 35 | \   }
+ *    '
+ *   addressesList.scss 19:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 19 \2502  \250c    @include respond(mobile) {\a 20 \2502  \2502      padding: 2vw 3.25vw 2vw 3.25vw;\a 21 \2502  \2502  \a 22 \2502  \2502      &__title {\a 23 \2502  \2502        font-size: 4vw;\a 24 \2502  \2502      }\a 25 \2502  \2502  \a 26 \2502  \2502      &__button {\a 27 \2502  \2502        padding: 1.5vw 2.5vw;\a 28 \2502  \2502        font-size: 0.85vw;\a 29 \2502  \2502        border-radius: 1vw;\a 30 \2502  \2502  \a 31 \2502  \2502        &-icon {\a 32 \2502  \2502          width: 2vw;\a 33 \2502  \2502        }\a 34 \2502  \2502      }\a 35 \2502  \2514    }\a    \2575 \a   addressesList.scss 19:3  root stylesheet";
+}

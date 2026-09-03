@@ -1,0 +1,29 @@
+.cart-container {
+  margin-top: 1vw;
+  display: flex;
+  gap: 1.25vw;
+
+  .cart-total-and-cow {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25vw;
+
+    & img {
+      width: 60%;
+    }
+  }
+  @include respond(mobile) {
+    flex-direction: column;
+
+    .cart-total-fixed {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+    }
+  }
+}
+

@@ -1,0 +1,104 @@
+.delivery-block {
+  margin-top: 1vw;
+  color: #4B4B4B;
+
+  &-title {
+    font-size: 1vw;
+    font-weight: bold;
+  }
+
+  &-select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.25vw;
+    gap: 2vw;
+
+    & label {
+      font-size: 0.85vw;
+      flex-shrink: 0;
+    }
+
+    .custom-select.border {
+      width: 22.5vw;
+
+      .custom-select__button {
+        border-radius: 0.5vw;
+        padding: 0.35vw 0.4vw;
+      }
+    }
+  }
+
+  &-comment {
+    margin-top: 1vw;
+    gap: 0.5vw;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+
+    & label {
+      font-size: 0.85vw;
+    }
+
+    &__textarea {
+      width: 65%;
+      resize: none;
+      border-radius: 0.5vw;
+      padding: 0.25vw 0.5vw;
+      font-size: 0.8vw;
+
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+
+  @include respond(mobile) {
+    margin-top: 3vw;
+
+    &-title {
+      font-size: 3vw;
+    }
+
+    &-select {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1vw;
+      margin-top: 3vw;
+
+      & label {
+        font-size: 2vw;
+      }
+
+      .custom-select.border {
+        width: 100%;
+
+        .custom-select__button {
+          border-radius: 1vw;
+          padding: 1vw 1.2vw;
+        }
+      }
+    }
+
+    &-comment {
+      margin-top: 2vw;
+      gap: 1vw;
+      width: 100%;
+      flex-direction: column;
+      align-content: flex-start;
+
+      & label {
+        font-size: 2vw;
+      }
+
+      &__textarea {
+        width: 100%;
+        border-radius: 1vw;
+        padding: 1vw 1.5vw;
+        font-size: 3vw;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.information-content, .information-content-view {
+  border: 0.1vw solid #e0e0e0;
+  border-radius: 0.25vw;
+  overflow: hidden;
+  color: #4B4B4B;
+
+  &-wrapper {
+    padding: 0.5vw 1vw;
+    font-size: 0.8vw;
+    line-height: 1.1vw;
+    outline: none;
+    min-height: 13vw !important;
+
+    &>h1{
+      font-size: 1.2vw;
+      font-weight: 800;
+      margin: 0.6vw 0;
+    }
+
+    &>h2{
+      font-size: 1vw;
+      font-weight: 700;
+      margin: 0.6vw 0;
+    }
+
+    &>ul{
+      padding-left: 0.5vw;
+      margin: 0.25vw 0;
+    }
+
+    &>ol{
+      padding-left: 0.5vw;
+      margin: 0.25vw 0;
+    }
+
+    &>li{
+      padding-left: 0.5vw;
+      margin: 0.25vw 0;
+    }
+
+    &>p{
+      margin: 0.25vw 0;
+    }
+
+  }
+}

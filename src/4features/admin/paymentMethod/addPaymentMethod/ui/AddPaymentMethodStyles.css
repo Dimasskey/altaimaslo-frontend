@@ -1,0 +1,66 @@
+.container_add_payment-method {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 0 1vw 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.42vw;
+  overflow: hidden;
+  padding: 1.12vw 1.05vw;
+  gap: 1vw;
+}
+.container_add_payment-method-header {
+  display: flex;
+  color: #4B4B4B;
+  font-size: 2vw;
+  gap: 0.5vw;
+  align-items: center;
+}
+.container_add_payment-method-header-arrow-back {
+  width: 1.5vw;
+  height: 1.5vw;
+  cursor: pointer;
+}
+.container_add_payment-method-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.container_add_payment-method-item_name, .container_add_payment-method-item_comment {
+  resize: none;
+  font-size: 1vw;
+  border-radius: 0.3vw;
+  border: 0.5px solid #4B4B4B;
+  padding: 1%;
+  color: #4B4B4B;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+.container_add_payment-method-item_name:focus-visible, .container_add_payment-method-item_comment:focus-visible {
+  border: 0.1vw solid #0585D0;
+}
+.container_add_payment-method-item_name::placeholder, .container_add_payment-method-item_comment::placeholder {
+  color: #4B4B4B;
+}
+.container_add_payment-method-button-save {
+  padding: 0.8vw 1.5vw;
+  justify-content: center;
+  background-color: #096EBC;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0.3vw;
+  font-size: 0.8vw;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-end;
+  width: auto;
+  min-width: 8vw;
+  gap: 1vw;
+}
+.container_add_payment-method-button-save-img {
+  width: 1.25vw;
+}
+
+/*# sourceMappingURL=AddPaymentMethodStyles.css.map */

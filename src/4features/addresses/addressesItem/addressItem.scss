@@ -1,0 +1,133 @@
+.address-item {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.1vw solid #BABABA;
+  
+  &-info {
+    display: flex;
+    align-items: center;
+    padding: 1.5vw 0 1.5vw 1.5vw;
+    gap: 1.1vw;
+    color: #4b4b4b;
+    font-size: 0.8vw;
+    width: 70%;
+    .item-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25vw;
+      word-break: break-all;
+
+      &__name {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vw;
+    padding-right: 1.5vw;
+
+    .item-actions-moderated {
+      display: flex;
+      justify-content: flex-end;
+      &__value {
+        padding: 0.5vw 1vw 0.5vw 1vw;
+        border-radius: 0.5vw;
+        font-size: 0.75vw;
+        font-weight: normal;
+
+        &.moderated {
+          background-color: #1DB8DA;
+          color: #fff;
+        }
+
+        &.not-moderated {
+          background-color: #cacaca;
+          color: #fff;
+        }
+      }
+    }
+
+    .item-actions-buttons {
+
+      .actions-button__edit {
+        border:none;
+        background: none;
+        font-size: 0.8vw;
+        color: #7F7F7F;
+        cursor: pointer;
+      }
+
+      .actions-button__delete {
+        border:none;
+        background: none;
+        font-size: 0.8vw;
+        color: #c60000;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @include respond(mobile) {
+    flex-direction: column;
+    justify-content: center;
+
+    .item-actions-moderated {
+      display: flex;
+      justify-content: flex-start;
+      padding: 1.5vw 1.5vw 0 3.25vw;
+      &__value {
+        padding: 1.25vw 2vw 1.25vw 2vw;
+        border-radius: 1vw;
+        font-size: 2vw;
+
+        &.moderated {
+          background-color: #1DB8DA;
+          color: #fff;
+        }
+
+        &.not-moderated {
+          background-color: #cacaca;
+          color: #fff;
+        }
+      }
+    }
+
+    &-info {
+      display: flex;
+      align-items: center;
+      padding: 2.5vw 1.5vw 0 3.25vw;
+      gap: 2vw;
+      font-size: 2vw;
+      word-break: break-all;
+      width: 95%;
+      .item-info {
+        gap: 1vw;
+      }
+    }
+
+    &-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 1vw;
+      padding-right: 0;
+
+
+      .item-actions-buttons {
+        display: flex;
+        justify-content: space-between;
+        padding: 3vw 5vw 2vw 3.25vw;
+        .actions-button__edit {
+          font-size: 3vw;
+        }
+
+        .actions-button__delete {
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+}

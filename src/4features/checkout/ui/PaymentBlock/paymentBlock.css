@@ -1,0 +1,99 @@
+/* Error: Undefined mixin.
+ *     ,
+ * 101 | /   @include respond(mobile) {
+ * 102 | |     margin-top: 3vw;
+ * 103 | |     &__title {
+ * 104 | |       font-size: 3vw;
+ * 105 | |     }
+ * 106 | | 
+ * 107 | |     &__description {
+ * 108 | |       font-size: 2vw;
+ * 109 | |       margin-top: 1.5vw;
+ * 110 | |     }
+ * 111 | | 
+ * 112 | |     .payment-methods {
+ * 113 | |       flex-direction: column;
+ * 114 | |       gap: 2vw;
+ * 115 | |       font-size: 2.25vw;
+ * 116 | | 
+ * 117 | |       &__title {
+ * 118 | |         font-size: 2.5vw;
+ * 119 | |       }
+ * 120 | | 
+ * 121 | |       &-options {
+ * 122 | |         gap: 2vw;
+ * 123 | |       }
+ * 124 | | 
+ * 125 | |       .payment-method {
+ * 126 | |         gap: 1vw;
+ * 127 | |         &__about {
+ * 128 | |           font-size: 2vw;
+ * 129 | |           padding-left: 5vw;
+ * 130 | |           width: 75%;
+ * 131 | |         }
+ * 132 | | 
+ * 133 | |         input[type="radio"] {
+ * 134 | |           & + label {
+ * 135 | |             padding-left: 5vw;
+ * 136 | |             cursor: pointer;
+ * 137 | |             display: flex;
+ * 138 | |             align-items: center;
+ * 139 | | 
+ * 140 | |             &::before {
+ * 141 | |               content: '';
+ * 142 | |               position: absolute;
+ * 143 | |               left: 0;
+ * 144 | |               top: 50%;
+ * 145 | |               transform: translateY(-50%);
+ * 146 | |               width: 3.5vw;
+ * 147 | |               height: 3.5vw;
+ * 148 | |               border: 0.1vw solid #9A9A9A;
+ * 149 | |               border-radius: 50%;
+ * 150 | |               background: white;
+ * 151 | |               transition: all 0.3s ease;
+ * 152 | |             }
+ * 153 | | 
+ * 154 | |             &::after {
+ * 155 | |               content: '';
+ * 156 | |               position: absolute;
+ * 157 | |               left: 0.89vw;
+ * 158 | |               top: 50%;
+ * 159 | |               transform: translateY(-50%) scale(0);
+ * 160 | |               width: 1.75vw;
+ * 161 | |               height: 1.75vw;
+ * 162 | |               border-radius: 50%;
+ * 163 | |               background: #096ebc;
+ * 164 | |               transition: transform 0.3s ease;
+ * 165 | |             }
+ * 166 | |           }
+ * 167 | | 
+ * 168 | |           &:checked + label {
+ * 169 | |             &::before {
+ * 170 | |               border-color: #9A9A9A;
+ * 171 | |             }
+ * 172 | | 
+ * 173 | |             &::after {
+ * 174 | |               transform: translateY(-50%) scale(1);
+ * 175 | |             }
+ * 176 | |           }
+ * 177 | | 
+ * 178 | |           &:hover + label::before {
+ * 179 | |             border-color: #1976d2;
+ * 180 | |           }
+ * 181 | |         }
+ * 182 | |       }
+ * 183 | |     }
+ * 184 | \   }
+ *     '
+ *   paymentBlock.scss 101:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a     \2577 \a 101 \2502  \250c    @include respond(mobile) {\a 102 \2502  \2502      margin-top: 3vw;\a 103 \2502  \2502      &__title {\a 104 \2502  \2502        font-size: 3vw;\a 105 \2502  \2502      }\a 106 \2502  \2502  \a 107 \2502  \2502      &__description {\a 108 \2502  \2502        font-size: 2vw;\a 109 \2502  \2502        margin-top: 1.5vw;\a 110 \2502  \2502      }\a 111 \2502  \2502  \a 112 \2502  \2502      .payment-methods {\a 113 \2502  \2502        flex-direction: column;\a 114 \2502  \2502        gap: 2vw;\a 115 \2502  \2502        font-size: 2.25vw;\a 116 \2502  \2502  \a 117 \2502  \2502        &__title {\a 118 \2502  \2502          font-size: 2.5vw;\a 119 \2502  \2502        }\a 120 \2502  \2502  \a 121 \2502  \2502        &-options {\a 122 \2502  \2502          gap: 2vw;\a 123 \2502  \2502        }\a 124 \2502  \2502  \a 125 \2502  \2502        .payment-method {\a 126 \2502  \2502          gap: 1vw;\a 127 \2502  \2502          &__about {\a 128 \2502  \2502            font-size: 2vw;\a 129 \2502  \2502            padding-left: 5vw;\a 130 \2502  \2502            width: 75%;\a 131 \2502  \2502          }\a 132 \2502  \2502  \a 133 \2502  \2502          input[type=\"radio\"] {\a 134 \2502  \2502            & + label {\a 135 \2502  \2502              padding-left: 5vw;\a 136 \2502  \2502              cursor: pointer;\a 137 \2502  \2502              display: flex;\a 138 \2502  \2502              align-items: center;\a 139 \2502  \2502  \a 140 \2502  \2502              &::before {\a 141 \2502  \2502                content: '';\a 142 \2502  \2502                position: absolute;\a 143 \2502  \2502                left: 0;\a 144 \2502  \2502                top: 50%;\a 145 \2502  \2502                transform: translateY(-50%);\a 146 \2502  \2502                width: 3.5vw;\a 147 \2502  \2502                height: 3.5vw;\a 148 \2502  \2502                border: 0.1vw solid #9A9A9A;\a 149 \2502  \2502                border-radius: 50%;\a 150 \2502  \2502                background: white;\a 151 \2502  \2502                transition: all 0.3s ease;\a 152 \2502  \2502              }\a 153 \2502  \2502  \a 154 \2502  \2502              &::after {\a 155 \2502  \2502                content: '';\a 156 \2502  \2502                position: absolute;\a 157 \2502  \2502                left: 0.89vw;\a 158 \2502  \2502                top: 50%;\a 159 \2502  \2502                transform: translateY(-50%) scale(0);\a 160 \2502  \2502                width: 1.75vw;\a 161 \2502  \2502                height: 1.75vw;\a 162 \2502  \2502                border-radius: 50%;\a 163 \2502  \2502                background: #096ebc;\a 164 \2502  \2502                transition: transform 0.3s ease;\a 165 \2502  \2502              }\a 166 \2502  \2502            }\a 167 \2502  \2502  \a 168 \2502  \2502            &:checked + label {\a 169 \2502  \2502              &::before {\a 170 \2502  \2502                border-color: #9A9A9A;\a 171 \2502  \2502              }\a 172 \2502  \2502  \a 173 \2502  \2502              &::after {\a 174 \2502  \2502                transform: translateY(-50%) scale(1);\a 175 \2502  \2502              }\a 176 \2502  \2502            }\a 177 \2502  \2502  \a 178 \2502  \2502            &:hover + label::before {\a 179 \2502  \2502              border-color: #1976d2;\a 180 \2502  \2502            }\a 181 \2502  \2502          }\a 182 \2502  \2502        }\a 183 \2502  \2502      }\a 184 \2502  \2514    }\a     \2575 \a   paymentBlock.scss 101:3  root stylesheet";
+}

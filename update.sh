@@ -1,0 +1,1 @@
+npm install && npm run build && systemctl restart altay_maslo_front.service

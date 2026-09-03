@@ -1,0 +1,48 @@
+.recommendation-slider {
+  --swiper-pagination-bullet-size: 0.75vw;
+  margin: 2vw auto 0 auto;
+
+  &-empty {
+    margin-top: 1vw;
+    background-color: #fff;
+    border-radius: 0.5vw;
+    font-size: 1vw;
+    text-align: center;
+    padding: 1vw;
+
+    @include respond(mobile) {
+      margin-top: 2vw;
+      border-radius: 2vw;
+      font-size: 3vw;
+      padding: 3vw;
+    }
+  }
+  @include respond(mobile) {
+    max-width: 95%;
+  }
+
+  &__slide {
+    display: flex;
+  }
+
+  &__title {
+    font-size: 1.25vw;
+
+    @include respond(mobile) {
+      font-size: 3vw;
+    }
+  }
+
+  &__container {
+    margin-top: 1.25vw;
+    display: flex;
+    padding-bottom: 4vw;
+
+    @include respond(mobile) {
+      padding-bottom: 7vw;
+
+      --swiper-pagination-bullet-size: 2vw;
+    }
+  }
+
+}

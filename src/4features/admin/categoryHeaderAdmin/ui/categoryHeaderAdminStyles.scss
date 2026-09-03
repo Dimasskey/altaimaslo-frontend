@@ -1,0 +1,133 @@
+.categories-header-admin {
+  display: flex;
+  height: auto;
+  background-color: #fff;
+  width: 100%;
+  flex-direction: row;
+  border-radius: 0.5vw;
+  padding: 1.35vw 1vw 1vw 1.35vw;
+  color: #898989;
+  gap: 1.35vw;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+  }
+
+  &__top {
+    display: flex;
+    gap: 1vw;
+    line-height: 0.8;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &>svg {
+      width: 1.5vw;
+      height: 1.5vw;
+      cursor: pointer;
+    }
+
+  }
+
+  &__bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 0.25vw;
+    font-size: 1vw;
+    align-items: center;
+  }
+
+  &__select {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vw;
+    font-size: 0.9vw;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 1.25vw;
+    color: #4b4b4b;
+    display: flex;
+    flex-direction: column;
+    word-break: break-word;
+    white-space: normal;
+    gap: 0.4vw;
+
+    &-line{
+      font-size: 1.25vw;
+      font-weight: 400;
+    }
+  }
+
+  &__count {
+    font-size: 1vw;
+  }
+
+  &__filter {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+    position: relative;
+
+    &-title {
+      font-size: 1.25vw;
+    }
+
+    &-icon {
+      cursor: pointer;
+      width: 1.5vw;
+      height: 1.5vw;
+
+      &:hover{
+        &>path{
+          fill: #1DB8DA;
+        }
+      }
+
+      &>path{
+        fill: #898989;
+      }
+    }
+
+  }
+
+}
+
+.active-filterAdmin{
+  &>path{
+    fill: #096EBC;
+  }
+}
+
+.categories-header-admin__filter-sidebar {
+  position: absolute;
+  top: 2.5vw;
+  right: -1vw;
+  z-index: 11;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  box-shadow: 0 0 1vw 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5vw;
+
+  .filter-sidebar{
+    width: 100%;
+  }
+}
+
+.categories-header-admin__filter-sidebar--open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}

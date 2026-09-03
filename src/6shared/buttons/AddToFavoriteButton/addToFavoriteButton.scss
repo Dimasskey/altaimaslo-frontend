@@ -1,0 +1,41 @@
+.product-card-favorite {
+  position: absolute;
+  right: 1vw;
+  cursor: pointer;
+  z-index: 10;
+
+  @include respond(mobile) {
+    right: 2vw;
+  }
+
+  &__icon {
+    width: 2vw;
+    height: 100%;
+
+    @include respond(mobile) {
+      width: 5vw;
+    }
+  }
+
+  &__icon path {
+    fill: #4b4b4b;
+    transition: fill 0.2s ease;
+  }
+
+  &__icon--active path {
+    fill: var(--button-color);
+  }
+
+  /* === ИЗМЕНЕНИЯ ЗДЕСЬ === */
+
+  // Применяем hover эффект (красный цвет) ТОЛЬКО для десктопа
+  // Это предотвращает "залипание" красного цвета при тапе на телефоне
+  &.desktop:hover &__icon path {
+    fill: red;
+  }
+
+  // Active (нажатие) оставляем для всех, чтобы видеть отклик при тапе
+  &:active &__icon path {
+    fill: var(--button-color-active);
+  }
+}

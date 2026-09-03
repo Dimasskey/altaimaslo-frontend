@@ -1,0 +1,43 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 36 | /   @include respond(mobile) {
+ * 37 | |     max-width: 95%;
+ * 38 | |     margin: 0 auto;
+ * 39 | |     border-radius: 1vw;
+ * 40 | |     padding: 2vw 0 5vw 2.5vw;
+ * 41 | | 
+ * 42 | |     &-title {
+ * 43 | |       font-size: 4vw;
+ * 44 | |     }
+ * 45 | | 
+ * 46 | |     &-organization {
+ * 47 | |       font-size: 3vw;
+ * 48 | |       margin-top: 2.5vw;
+ * 49 | |     }
+ * 50 | | 
+ * 51 | |     &-description {
+ * 52 | |       margin-top: 2vw;
+ * 53 | |       font-size: 2.25vw;
+ * 54 | |       gap: 2vw;
+ * 55 | | 
+ * 56 | |       &-text {
+ * 57 | | 
+ * 58 | |         &__title {
+ * 59 | |           width: 28vw;
+ * 60 | |         }
+ * 61 | |       }
+ * 62 | |     }
+ * 63 | \   }
+ *    '
+ *   accountContent.scss 36:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 36 \2502  \250c    @include respond(mobile) {\a 37 \2502  \2502      max-width: 95%;\a 38 \2502  \2502      margin: 0 auto;\a 39 \2502  \2502      border-radius: 1vw;\a 40 \2502  \2502      padding: 2vw 0 5vw 2.5vw;\a 41 \2502  \2502  \a 42 \2502  \2502      &-title {\a 43 \2502  \2502        font-size: 4vw;\a 44 \2502  \2502      }\a 45 \2502  \2502  \a 46 \2502  \2502      &-organization {\a 47 \2502  \2502        font-size: 3vw;\a 48 \2502  \2502        margin-top: 2.5vw;\a 49 \2502  \2502      }\a 50 \2502  \2502  \a 51 \2502  \2502      &-description {\a 52 \2502  \2502        margin-top: 2vw;\a 53 \2502  \2502        font-size: 2.25vw;\a 54 \2502  \2502        gap: 2vw;\a 55 \2502  \2502  \a 56 \2502  \2502        &-text {\a 57 \2502  \2502  \a 58 \2502  \2502          &__title {\a 59 \2502  \2502            width: 28vw;\a 60 \2502  \2502          }\a 61 \2502  \2502        }\a 62 \2502  \2502      }\a 63 \2502  \2514    }\a    \2575 \a   accountContent.scss 36:3  root stylesheet";
+}

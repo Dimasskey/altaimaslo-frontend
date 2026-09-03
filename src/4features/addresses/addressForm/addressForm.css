@@ -1,0 +1,130 @@
+/* Error: Undefined mixin.
+ *     ,
+ * 137 | /   @include respond(mobile) {
+ * 138 | |     border-radius: 0;
+ * 139 | |     padding: 2.5vw 4vw 1.5vw 4vw;
+ * 140 | |     gap: 3vw;
+ * 141 | | 
+ * 142 | |     .form-header {
+ * 143 | |       gap: 2.5vw;
+ * 144 | | 
+ * 145 | |       &__back {
+ * 146 | |         width: 2vw;
+ * 147 | |         height: auto;
+ * 148 | |       }
+ * 149 | | 
+ * 150 | |       &__title {
+ * 151 | |         font-size: 5vw;
+ * 152 | |       }
+ * 153 | |     }
+ * 154 | |     .form-content {
+ * 155 | |       display: flex;
+ * 156 | |       flex-direction: column;
+ * 157 | |       gap: 3vw;
+ * 158 | |       width: 100%;
+ * 159 | | 
+ * 160 | |       & input {
+ * 161 | |         height: 7vw;
+ * 162 | |         border-radius: 1vw;
+ * 163 | |         padding-left: 1vw;
+ * 164 | |         font-size: 3vw;
+ * 165 | |       }
+ * 166 | | 
+ * 167 | |       & label {
+ * 168 | |         gap: 1.5vw;
+ * 169 | |         font-size: 3vw;
+ * 170 | |       }
+ * 171 | | 
+ * 172 | |       &-person {
+ * 173 | |         .content-person__title {
+ * 174 | |           font-size: 4vw;
+ * 175 | |           margin-bottom: 3vw;
+ * 176 | |         }
+ * 177 | | 
+ * 178 | |         & input {
+ * 179 | |           width: 100%;
+ * 180 | |         }
+ * 181 | | 
+ * 182 | |         .content-person-fio {
+ * 183 | |           flex-direction: column;
+ * 184 | |           gap: 2vw;
+ * 185 | |         }
+ * 186 | | 
+ * 187 | |         .content-person-number {
+ * 188 | |           margin-top: 2vw;
+ * 189 | |         }
+ * 190 | |       }
+ * 191 | | 
+ * 192 | |       &-address {
+ * 193 | |         .content-address__title {
+ * 194 | |           font-size: 4vw;
+ * 195 | |           margin-bottom: 3vw;
+ * 196 | |         }
+ * 197 | | 
+ * 198 | |         & input {
+ * 199 | |           width: 100%;
+ * 200 | |         }
+ * 201 | |         .content-address-name,
+ * 202 | |         .content-address-address {
+ * 203 | |           display: flex;
+ * 204 | |           flex-direction: column;
+ * 205 | |           gap: 1.5vw;
+ * 206 | |         }
+ * 207 | | 
+ * 208 | |         .content-address-name.readonly,
+ * 209 | |         .content-address-address.readonly {
+ * 210 | |           flex-direction: column;
+ * 211 | |           align-items: flex-start;
+ * 212 | |           word-break: break-all;
+ * 213 | | 
+ * 214 | |           .content-address-name__label,
+ * 215 | |           .content-address-address__label{
+ * 216 | |             width: fit-content;
+ * 217 | |             font-size: 3vw;
+ * 218 | |             color: #8b8b8b;
+ * 219 | | 
+ * 220 | | 
+ * 221 | |           }
+ * 222 | |           .content-address-name--readonly,
+ * 223 | |           .content-address-name--readonly{
+ * 224 | |             width: 100%;
+ * 225 | |             font-size: 3vw;
+ * 226 | |             color: #4B4B4B;
+ * 227 | |           }
+ * 228 | |         }
+ * 229 | |         .content-address-address {
+ * 230 | |           margin-top: 2vw;
+ * 231 | | 
+ * 232 | |           &__input {
+ * 233 | |             height: 11vw;
+ * 234 | |             border-radius: 1vw;
+ * 235 | |             padding: 0.75vw 1vw 1vw 1vw;
+ * 236 | |             resize: none;
+ * 237 | |             font-size: 3vw;
+ * 238 | |           }
+ * 239 | |         }
+ * 240 | |       }
+ * 241 | | 
+ * 242 | |       .form-button {
+ * 243 | |         background-color: #0585D0;
+ * 244 | |         color: #fff;
+ * 245 | |         justify-content: center;
+ * 246 | |         padding: 2vw 7vw;
+ * 247 | |         border-radius: 1vw;
+ * 248 | |         width: 100%;
+ * 249 | |       }
+ * 250 | |     }
+ * 251 | \   }
+ *     '
+ *   addressForm.scss 137:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a     \2577 \a 137 \2502  \250c    @include respond(mobile) {\a 138 \2502  \2502      border-radius: 0;\a 139 \2502  \2502      padding: 2.5vw 4vw 1.5vw 4vw;\a 140 \2502  \2502      gap: 3vw;\a 141 \2502  \2502  \a 142 \2502  \2502      .form-header {\a 143 \2502  \2502        gap: 2.5vw;\a 144 \2502  \2502  \a 145 \2502  \2502        &__back {\a 146 \2502  \2502          width: 2vw;\a 147 \2502  \2502          height: auto;\a 148 \2502  \2502        }\a 149 \2502  \2502  \a 150 \2502  \2502        &__title {\a 151 \2502  \2502          font-size: 5vw;\a 152 \2502  \2502        }\a 153 \2502  \2502      }\a 154 \2502  \2502      .form-content {\a 155 \2502  \2502        display: flex;\a 156 \2502  \2502        flex-direction: column;\a 157 \2502  \2502        gap: 3vw;\a 158 \2502  \2502        width: 100%;\a 159 \2502  \2502  \a 160 \2502  \2502        & input {\a 161 \2502  \2502          height: 7vw;\a 162 \2502  \2502          border-radius: 1vw;\a 163 \2502  \2502          padding-left: 1vw;\a 164 \2502  \2502          font-size: 3vw;\a 165 \2502  \2502        }\a 166 \2502  \2502  \a 167 \2502  \2502        & label {\a 168 \2502  \2502          gap: 1.5vw;\a 169 \2502  \2502          font-size: 3vw;\a 170 \2502  \2502        }\a 171 \2502  \2502  \a 172 \2502  \2502        &-person {\a 173 \2502  \2502          .content-person__title {\a 174 \2502  \2502            font-size: 4vw;\a 175 \2502  \2502            margin-bottom: 3vw;\a 176 \2502  \2502          }\a 177 \2502  \2502  \a 178 \2502  \2502          & input {\a 179 \2502  \2502            width: 100%;\a 180 \2502  \2502          }\a 181 \2502  \2502  \a 182 \2502  \2502          .content-person-fio {\a 183 \2502  \2502            flex-direction: column;\a 184 \2502  \2502            gap: 2vw;\a 185 \2502  \2502          }\a 186 \2502  \2502  \a 187 \2502  \2502          .content-person-number {\a 188 \2502  \2502            margin-top: 2vw;\a 189 \2502  \2502          }\a 190 \2502  \2502        }\a 191 \2502  \2502  \a 192 \2502  \2502        &-address {\a 193 \2502  \2502          .content-address__title {\a 194 \2502  \2502            font-size: 4vw;\a 195 \2502  \2502            margin-bottom: 3vw;\a 196 \2502  \2502          }\a 197 \2502  \2502  \a 198 \2502  \2502          & input {\a 199 \2502  \2502            width: 100%;\a 200 \2502  \2502          }\a 201 \2502  \2502          .content-address-name,\a 202 \2502  \2502          .content-address-address {\a 203 \2502  \2502            display: flex;\a 204 \2502  \2502            flex-direction: column;\a 205 \2502  \2502            gap: 1.5vw;\a 206 \2502  \2502          }\a 207 \2502  \2502  \a 208 \2502  \2502          .content-address-name.readonly,\a 209 \2502  \2502          .content-address-address.readonly {\a 210 \2502  \2502            flex-direction: column;\a 211 \2502  \2502            align-items: flex-start;\a 212 \2502  \2502            word-break: break-all;\a 213 \2502  \2502  \a 214 \2502  \2502            .content-address-name__label,\a 215 \2502  \2502            .content-address-address__label{\a 216 \2502  \2502              width: fit-content;\a 217 \2502  \2502              font-size: 3vw;\a 218 \2502  \2502              color: #8b8b8b;\a 219 \2502  \2502  \a 220 \2502  \2502  \a 221 \2502  \2502            }\a 222 \2502  \2502            .content-address-name--readonly,\a 223 \2502  \2502            .content-address-name--readonly{\a 224 \2502  \2502              width: 100%;\a 225 \2502  \2502              font-size: 3vw;\a 226 \2502  \2502              color: #4B4B4B;\a 227 \2502  \2502            }\a 228 \2502  \2502          }\a 229 \2502  \2502          .content-address-address {\a 230 \2502  \2502            margin-top: 2vw;\a 231 \2502  \2502  \a 232 \2502  \2502            &__input {\a 233 \2502  \2502              height: 11vw;\a 234 \2502  \2502              border-radius: 1vw;\a 235 \2502  \2502              padding: 0.75vw 1vw 1vw 1vw;\a 236 \2502  \2502              resize: none;\a 237 \2502  \2502              font-size: 3vw;\a 238 \2502  \2502            }\a 239 \2502  \2502          }\a 240 \2502  \2502        }\a 241 \2502  \2502  \a 242 \2502  \2502        .form-button {\a 243 \2502  \2502          background-color: #0585D0;\a 244 \2502  \2502          color: #fff;\a 245 \2502  \2502          justify-content: center;\a 246 \2502  \2502          padding: 2vw 7vw;\a 247 \2502  \2502          border-radius: 1vw;\a 248 \2502  \2502          width: 100%;\a 249 \2502  \2502        }\a 250 \2502  \2502      }\a 251 \2502  \2514    }\a     \2575 \a   addressForm.scss 137:3  root stylesheet";
+}

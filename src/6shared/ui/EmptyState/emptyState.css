@@ -1,0 +1,40 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 38 | /   @include respond(mobile) {
+ * 39 | |     max-width: 95%;
+ * 40 | |     margin: 0 auto;
+ * 41 | |     border-radius: 2vw;
+ * 42 | |     gap: 2vw;
+ * 43 | |     padding-top: 2vw;
+ * 44 | | 
+ * 45 | |     &__image img {
+ * 46 | |       width: 30vw;
+ * 47 | |     }
+ * 48 | | 
+ * 49 | |     &__title {
+ * 50 | |       font-size: 3vw;
+ * 51 | |     }
+ * 52 | | 
+ * 53 | |     &__description {
+ * 54 | |       font-size: 2.5vw;
+ * 55 | |       width: 75%;
+ * 56 | |     }
+ * 57 | | 
+ * 58 | |     &__button {
+ * 59 | |       padding: 1.5vw 3vw;
+ * 60 | |       border-radius: 1.5vw;
+ * 61 | |     }
+ * 62 | \   }
+ *    '
+ *   emptyState.scss 38:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 38 \2502  \250c    @include respond(mobile) {\a 39 \2502  \2502      max-width: 95%;\a 40 \2502  \2502      margin: 0 auto;\a 41 \2502  \2502      border-radius: 2vw;\a 42 \2502  \2502      gap: 2vw;\a 43 \2502  \2502      padding-top: 2vw;\a 44 \2502  \2502  \a 45 \2502  \2502      &__image img {\a 46 \2502  \2502        width: 30vw;\a 47 \2502  \2502      }\a 48 \2502  \2502  \a 49 \2502  \2502      &__title {\a 50 \2502  \2502        font-size: 3vw;\a 51 \2502  \2502      }\a 52 \2502  \2502  \a 53 \2502  \2502      &__description {\a 54 \2502  \2502        font-size: 2.5vw;\a 55 \2502  \2502        width: 75%;\a 56 \2502  \2502      }\a 57 \2502  \2502  \a 58 \2502  \2502      &__button {\a 59 \2502  \2502        padding: 1.5vw 3vw;\a 60 \2502  \2502        border-radius: 1.5vw;\a 61 \2502  \2502      }\a 62 \2502  \2514    }\a    \2575 \a   emptyState.scss 38:3  root stylesheet";
+}

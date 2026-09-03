@@ -1,0 +1,26 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 17 | /   @include respond(mobile) {
+ * 18 | |     flex-direction: column;
+ * 19 | | 
+ * 20 | |     .cart-total-fixed {
+ * 21 | |       position: fixed;
+ * 22 | |       bottom: 0;
+ * 23 | |       left: 0;
+ * 24 | |       right: 0;
+ * 25 | |       z-index: 999;
+ * 26 | |     }
+ * 27 | \   }
+ *    '
+ *   cartPage.scss 17:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 17 \2502  \250c    @include respond(mobile) {\a 18 \2502  \2502      flex-direction: column;\a 19 \2502  \2502  \a 20 \2502  \2502      .cart-total-fixed {\a 21 \2502  \2502        position: fixed;\a 22 \2502  \2502        bottom: 0;\a 23 \2502  \2502        left: 0;\a 24 \2502  \2502        right: 0;\a 25 \2502  \2502        z-index: 999;\a 26 \2502  \2502      }\a 27 \2502  \2514    }\a    \2575 \a   cartPage.scss 17:3  root stylesheet";
+}

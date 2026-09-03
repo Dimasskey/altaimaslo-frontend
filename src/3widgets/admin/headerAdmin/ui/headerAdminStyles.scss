@@ -1,0 +1,27 @@
+.header_admin {
+  height: 4.5vw;
+  background-color: #fff;
+  margin-top: 0.5vw;
+  border-radius: 1vw;
+  display: flex;
+  flex-direction: row;
+  column-gap: 2vw;
+  box-shadow: 0 0 0.5vw 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1%;
+}
+
+.header_admin-logo {
+  width: 5.5vw;
+  height: 3.5vw;
+}
+
+.buttonBackInSite{
+  font-size: 0.85vw;
+  padding: 1% 3%;
+  background-color: #096EBC;
+  color: #fff;
+  border: none;
+}

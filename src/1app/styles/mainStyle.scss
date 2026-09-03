@@ -1,0 +1,36 @@
+
+@use "variables" as *;
+@use "layout" as *;
+@use "mixins" as *;
+
+@import "zero.css";
+
+@font-face {
+  font-family: "inter_bold";
+  src: url("@fonts/Inter_Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "inter_medium";
+  src: url("@fonts/Inter_Medium.ttf") format('truetype');
+}
+
+* {
+  font-family: inter_medium, inter_bold, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: calc(100vw / 1.80);
+  margin: 0 auto;
+  background-color: #E6E6E6;
+
+  @include respond(mobile) {
+    max-width: 100%;
+  }
+}
+
+.body-admin{
+  max-width: calc(100vw / 1.45);
+}

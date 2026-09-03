@@ -1,0 +1,82 @@
+/* Error: Undefined mixin.
+ *     ,
+ * 74  | /   @include respond(mobile) {
+ * 75  | |     padding-right: 2vw;
+ * 76  | |     height: 28vw;
+ * 77  | |     justify-content: space-between;
+ * 78  | | 
+ * 79  | |     .item-info-img {
+ * 80  | |       width: 30%;
+ * 81  | |     }
+ * 82  | | 
+ * 83  | |     .item-info-description {
+ * 84  | |       flex-direction: column;
+ * 85  | |       width: 70%;
+ * 86  | | 
+ * 87  | |       .info-description__name {
+ * 88  | |         font-size: 2.5vw;
+ * 89  | |       }
+ * 90  | | 
+ * 91  | |       .favorites-actions {
+ * 92  | |         width: 100%;
+ * 93  | | 
+ * 94  | |         .product-counter-price {
+ * 95  | |           .counter-price-current {
+ * 96  | |             flex-direction: row;
+ * 97  | |             align-items: center;
+ * 98  | |             gap: 1vw;
+ * 99  | |           }
+ * 100 | |         }
+ * 101 | | 
+ * 102 | |         .item-actions-buttons {
+ * 103 | |           justify-content: flex-end;
+ * 104 | |         }
+ * 105 | | 
+ * 106 | |         .product-counter-actions {
+ * 107 | |           display: flex;
+ * 108 | |           flex-direction: row;
+ * 109 | |           margin-top: 2vw;
+ * 110 | |           gap: 2vw;
+ * 111 | |           justify-content: space-between;
+ * 112 | | 
+ * 113 | |           .product-counter-count {
+ * 114 | |             width: 50%;
+ * 115 | |             .counter-count__plus,.counter-count__minus {
+ * 116 | |               width: 35%;
+ * 117 | |             }
+ * 118 | |           }
+ * 119 | | 
+ * 120 | |           .add-to-cart-wrapper {
+ * 121 | |             width: 50%;
+ * 122 | | 
+ * 123 | |             .button-default__img1 {
+ * 124 | |               width: 2.5vw;
+ * 125 | |             }
+ * 126 | | 
+ * 127 | |             .button-default__img2 {
+ * 128 | |               width: 4vw;
+ * 129 | |             }
+ * 130 | | 
+ * 131 | |             .add-to-cart-btn.added {
+ * 132 | |               .button-default__img1 {
+ * 133 | |                 width: 4vw;
+ * 134 | |               }
+ * 135 | |             }
+ * 136 | |           }
+ * 137 | |         }
+ * 138 | |       }
+ * 139 | |     }
+ * 140 | \   }
+ *     '
+ *   favoritesItem.scss 74:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a     \2577 \a 74  \2502  \250c    @include respond(mobile) {\a 75  \2502  \2502      padding-right: 2vw;\a 76  \2502  \2502      height: 28vw;\a 77  \2502  \2502      justify-content: space-between;\a 78  \2502  \2502  \a 79  \2502  \2502      .item-info-img {\a 80  \2502  \2502        width: 30%;\a 81  \2502  \2502      }\a 82  \2502  \2502  \a 83  \2502  \2502      .item-info-description {\a 84  \2502  \2502        flex-direction: column;\a 85  \2502  \2502        width: 70%;\a 86  \2502  \2502  \a 87  \2502  \2502        .info-description__name {\a 88  \2502  \2502          font-size: 2.5vw;\a 89  \2502  \2502        }\a 90  \2502  \2502  \a 91  \2502  \2502        .favorites-actions {\a 92  \2502  \2502          width: 100%;\a 93  \2502  \2502  \a 94  \2502  \2502          .product-counter-price {\a 95  \2502  \2502            .counter-price-current {\a 96  \2502  \2502              flex-direction: row;\a 97  \2502  \2502              align-items: center;\a 98  \2502  \2502              gap: 1vw;\a 99  \2502  \2502            }\a 100 \2502  \2502          }\a 101 \2502  \2502  \a 102 \2502  \2502          .item-actions-buttons {\a 103 \2502  \2502            justify-content: flex-end;\a 104 \2502  \2502          }\a 105 \2502  \2502  \a 106 \2502  \2502          .product-counter-actions {\a 107 \2502  \2502            display: flex;\a 108 \2502  \2502            flex-direction: row;\a 109 \2502  \2502            margin-top: 2vw;\a 110 \2502  \2502            gap: 2vw;\a 111 \2502  \2502            justify-content: space-between;\a 112 \2502  \2502  \a 113 \2502  \2502            .product-counter-count {\a 114 \2502  \2502              width: 50%;\a 115 \2502  \2502              .counter-count__plus,.counter-count__minus {\a 116 \2502  \2502                width: 35%;\a 117 \2502  \2502              }\a 118 \2502  \2502            }\a 119 \2502  \2502  \a 120 \2502  \2502            .add-to-cart-wrapper {\a 121 \2502  \2502              width: 50%;\a 122 \2502  \2502  \a 123 \2502  \2502              .button-default__img1 {\a 124 \2502  \2502                width: 2.5vw;\a 125 \2502  \2502              }\a 126 \2502  \2502  \a 127 \2502  \2502              .button-default__img2 {\a 128 \2502  \2502                width: 4vw;\a 129 \2502  \2502              }\a 130 \2502  \2502  \a 131 \2502  \2502              .add-to-cart-btn.added {\a 132 \2502  \2502                .button-default__img1 {\a 133 \2502  \2502                  width: 4vw;\a 134 \2502  \2502                }\a 135 \2502  \2502              }\a 136 \2502  \2502            }\a 137 \2502  \2502          }\a 138 \2502  \2502        }\a 139 \2502  \2502      }\a 140 \2502  \2514    }\a     \2575 \a   favoritesItem.scss 74:3  root stylesheet";
+}

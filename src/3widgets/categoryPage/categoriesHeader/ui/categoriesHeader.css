@@ -1,0 +1,53 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 39 | /   @include respond(mobile) {
+ * 40 | |     border-radius: 0;
+ * 41 | |     padding: 3vw 3vw 3vw 3vw;
+ * 42 | |     gap: 4.5vw;
+ * 43 | | 
+ * 44 | |     &-top {
+ * 45 | |       display: flex;
+ * 46 | |       justify-content: space-between;
+ * 47 | | 
+ * 48 | |       &-name {
+ * 49 | |         gap: 3vw;
+ * 50 | |         .categories-header__title {
+ * 51 | |           font-size: 4vw;
+ * 52 | |         }
+ * 53 | | 
+ * 54 | |         .categories-header__count {
+ * 55 | |           font-size: 2.5vw;
+ * 56 | |         }
+ * 57 | |       }
+ * 58 | |     }
+ * 59 | | 
+ * 60 | |     &-filter {
+ * 61 | |       display: flex;
+ * 62 | |       align-items: center;
+ * 63 | |       gap: 1vw;
+ * 64 | |       cursor: pointer;
+ * 65 | | 
+ * 66 | |       &__title {
+ * 67 | |         font-size: 3vw;
+ * 68 | |         color: #0585D0;
+ * 69 | |       }
+ * 70 | | 
+ * 71 | |       &__icon {
+ * 72 | |         width: 3.5vw;
+ * 73 | |         height: auto;
+ * 74 | |       }
+ * 75 | |     }
+ * 76 | \   }
+ *    '
+ *   categoriesHeader.scss 39:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 39 \2502  \250c    @include respond(mobile) {\a 40 \2502  \2502      border-radius: 0;\a 41 \2502  \2502      padding: 3vw 3vw 3vw 3vw;\a 42 \2502  \2502      gap: 4.5vw;\a 43 \2502  \2502  \a 44 \2502  \2502      &-top {\a 45 \2502  \2502        display: flex;\a 46 \2502  \2502        justify-content: space-between;\a 47 \2502  \2502  \a 48 \2502  \2502        &-name {\a 49 \2502  \2502          gap: 3vw;\a 50 \2502  \2502          .categories-header__title {\a 51 \2502  \2502            font-size: 4vw;\a 52 \2502  \2502          }\a 53 \2502  \2502  \a 54 \2502  \2502          .categories-header__count {\a 55 \2502  \2502            font-size: 2.5vw;\a 56 \2502  \2502          }\a 57 \2502  \2502        }\a 58 \2502  \2502      }\a 59 \2502  \2502  \a 60 \2502  \2502      &-filter {\a 61 \2502  \2502        display: flex;\a 62 \2502  \2502        align-items: center;\a 63 \2502  \2502        gap: 1vw;\a 64 \2502  \2502        cursor: pointer;\a 65 \2502  \2502  \a 66 \2502  \2502        &__title {\a 67 \2502  \2502          font-size: 3vw;\a 68 \2502  \2502          color: #0585D0;\a 69 \2502  \2502        }\a 70 \2502  \2502  \a 71 \2502  \2502        &__icon {\a 72 \2502  \2502          width: 3.5vw;\a 73 \2502  \2502          height: auto;\a 74 \2502  \2502        }\a 75 \2502  \2502      }\a 76 \2502  \2514    }\a    \2575 \a   categoriesHeader.scss 39:3  root stylesheet";
+}

@@ -1,0 +1,32 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 21 | /   @include respond(mobile) {
+ * 22 | |     border-radius: 0;
+ * 23 | | 
+ * 24 | |     &-header {
+ * 25 | |       padding: 2.5vw 1.25vw 2.5vw 3vw;
+ * 26 | |       gap: 2vw;
+ * 27 | | 
+ * 28 | |       .custom-select.border {
+ * 29 | | 
+ * 30 | |       }
+ * 31 | |     }
+ * 32 | | 
+ * 33 | |     &-title {
+ * 34 | |       font-size: 4vw;
+ * 35 | |     }
+ * 36 | | 
+ * 37 | \   }
+ *    '
+ *   orderContent.scss 21:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 21 \2502  \250c    @include respond(mobile) {\a 22 \2502  \2502      border-radius: 0;\a 23 \2502  \2502  \a 24 \2502  \2502      &-header {\a 25 \2502  \2502        padding: 2.5vw 1.25vw 2.5vw 3vw;\a 26 \2502  \2502        gap: 2vw;\a 27 \2502  \2502  \a 28 \2502  \2502        .custom-select.border {\a 29 \2502  \2502  \a 30 \2502  \2502        }\a 31 \2502  \2502      }\a 32 \2502  \2502  \a 33 \2502  \2502      &-title {\a 34 \2502  \2502        font-size: 4vw;\a 35 \2502  \2502      }\a 36 \2502  \2502  \a 37 \2502  \2514    }\a    \2575 \a   orderContent.scss 21:3  root stylesheet";
+}

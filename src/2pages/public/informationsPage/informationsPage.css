@@ -1,0 +1,12 @@
+.information-page {
+  background-color: #fff;
+  border-radius: 0.5vw;
+  margin-top: 1vw;
+  padding: 1vw 1vw 2vw 3vw;
+  line-height: 2;
+}
+.information-page .information-content-view {
+  border: none;
+}
+
+/*# sourceMappingURL=informationsPage.css.map */

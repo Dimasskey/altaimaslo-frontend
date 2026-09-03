@@ -1,0 +1,141 @@
+.edit-filter-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 1000;
+  padding-top: 10vh;
+  animation: fadeIn 0.2s ease;
+}
+
+.edit-filter-modal-container {
+  z-index: 1001;
+  position: relative;
+}
+
+.edit-filters {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 1.12vw 1.05vw;
+  border-radius: 0.75vw;
+  position: relative;
+  gap: 1vw;
+  align-items: flex-end;
+  box-shadow: 0 0 1vw 0 rgba(0, 0, 0, 0.2);
+  color: #4B4B4B;
+}
+.edit-filters-arrow {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+  filter: drop-shadow(0 -2px 2px rgba(0, 0, 0, 0.1));
+}
+.edit-filters-arrow--top {
+  top: auto;
+  bottom: -10px;
+  border-bottom: none;
+  border-top: 10px solid white;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1));
+}
+.edit-filters--top {
+  margin-top: 10px;
+}
+.edit-filters-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  gap: 1vw;
+}
+.edit-filters-header .edit-filters-title {
+  font-size: 1.05vw;
+  font-weight: 600;
+}
+.edit-filters-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  width: 100%;
+}
+.edit-filters-body .input-item {
+  display: grid;
+  width: 100%;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.edit-filters-body .input-item > label {
+  font-size: 0.95vw;
+}
+.edit-filters-body .input-item > input {
+  border-radius: 0.42vw;
+  border: 0.1vw solid #4B4B4B;
+  padding: 1%;
+  font-size: 1vw;
+}
+.edit-filters-body .input-item > input:focus-visible {
+  outline: none;
+}
+.edit-filters-body .edit-filters-select {
+  padding: 0.3vw;
+  border-radius: 0.42vw;
+  font-weight: 500;
+  font-size: 0.8vw;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 13vw;
+  outline: none;
+  border: 0.1vw solid #4B4B4B;
+}
+.edit-filters-body .edit-filters-select .custom-select__button {
+  justify-content: space-between;
+  color: #4B4B4B;
+  font-size: 1vw;
+  font-weight: 500;
+}
+.edit-filters-body .edit-filters-select svg > path {
+  fill: #4B4B4B;
+}
+.edit-filters .edit-filters-saveButton {
+  background-color: #096EBC;
+  color: white;
+  border: none;
+  padding: 0.75vw 1.75vw;
+  gap: 0.5vw;
+  border-radius: 0.45vw;
+  font-size: 0.75vw;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+}
+.edit-filters .edit-filters-saveButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=editFiltersAdminStyles.css.map */

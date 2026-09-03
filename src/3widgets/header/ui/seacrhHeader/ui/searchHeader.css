@@ -1,0 +1,53 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 44 | /   @include respond(mobile) {
+ * 45 | |     width: 100%;
+ * 46 | |     height: 6vw;
+ * 47 | |     padding-left: 2vw;
+ * 48 | |     border-radius: 1vw;
+ * 49 | |     overflow: hidden;
+ * 50 | | 
+ * 51 | |     &__input {
+ * 52 | |       height: 100%;
+ * 53 | |       width: 80%;
+ * 54 | |       font-size: 2.5vw;
+ * 55 | |     }
+ * 56 | | 
+ * 57 | |     &__button {
+ * 58 | |       height: 100%;
+ * 59 | |       width: 20%;
+ * 60 | |       font-size: 2vw;
+ * 61 | |       background-color: var(--button-color);
+ * 62 | |       color: white;
+ * 63 | |       border-radius: 1vw;
+ * 64 | |     }
+ * 65 | | 
+ * 66 | | 
+ * 67 | |     &-back {
+ * 68 | |       width: 3vw;
+ * 69 | |       height: auto;
+ * 70 | |       cursor: pointer;
+ * 71 | |       transition: transform 0.3s ease;
+ * 72 | | 
+ * 73 | |       & path {
+ * 74 | |         fill: #0585D0;
+ * 75 | |       }
+ * 76 | | 
+ * 77 | |       &:hover {
+ * 78 | |         transform: translateX(-0.5vw);
+ * 79 | |       }
+ * 80 | |     }
+ * 81 | \   }
+ *    '
+ *   searchHeader.scss 44:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 44 \2502  \250c    @include respond(mobile) {\a 45 \2502  \2502      width: 100%;\a 46 \2502  \2502      height: 6vw;\a 47 \2502  \2502      padding-left: 2vw;\a 48 \2502  \2502      border-radius: 1vw;\a 49 \2502  \2502      overflow: hidden;\a 50 \2502  \2502  \a 51 \2502  \2502      &__input {\a 52 \2502  \2502        height: 100%;\a 53 \2502  \2502        width: 80%;\a 54 \2502  \2502        font-size: 2.5vw;\a 55 \2502  \2502      }\a 56 \2502  \2502  \a 57 \2502  \2502      &__button {\a 58 \2502  \2502        height: 100%;\a 59 \2502  \2502        width: 20%;\a 60 \2502  \2502        font-size: 2vw;\a 61 \2502  \2502        background-color: var(--button-color);\a 62 \2502  \2502        color: white;\a 63 \2502  \2502        border-radius: 1vw;\a 64 \2502  \2502      }\a 65 \2502  \2502  \a 66 \2502  \2502  \a 67 \2502  \2502      &-back {\a 68 \2502  \2502        width: 3vw;\a 69 \2502  \2502        height: auto;\a 70 \2502  \2502        cursor: pointer;\a 71 \2502  \2502        transition: transform 0.3s ease;\a 72 \2502  \2502  \a 73 \2502  \2502        & path {\a 74 \2502  \2502          fill: #0585D0;\a 75 \2502  \2502        }\a 76 \2502  \2502  \a 77 \2502  \2502        &:hover {\a 78 \2502  \2502          transform: translateX(-0.5vw);\a 79 \2502  \2502        }\a 80 \2502  \2502      }\a 81 \2502  \2514    }\a    \2575 \a   searchHeader.scss 44:3  root stylesheet";
+}

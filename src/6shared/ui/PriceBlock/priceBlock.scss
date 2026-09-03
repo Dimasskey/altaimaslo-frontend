@@ -1,0 +1,61 @@
+.product-counter-price {
+  grid-area: price;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3vw;
+  line-height: 1;
+
+  .counter-price__old {
+    font-size: 0.8vw;
+    text-decoration: line-through;
+    color: #898989;
+    margin-left: 0.5vw;
+  }
+
+  .counter-price-current {
+    font-size: 1.4vw;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25vw ;
+
+    &.right {
+      flex-direction: row;
+      align-items: center;
+      gap: 0.75vw;
+    }
+
+
+    &__value {
+      background-color: #FFCC00;
+      padding: 0.25vw 0.5vw;
+      border-radius: 0.5vw;
+    }
+
+    &__perOne {
+      font-size: 0.75vw;
+      color: #898989;
+    }
+  }
+
+  @include respond(mobile) {
+    gap: 0.75vw;
+    .counter-price__old {
+      font-size: 2.5vw;
+    }
+
+    .counter-price-current {
+      font-size: 3.5vw;
+
+      &__value {
+        padding: 0.75vw 1.25vw;
+        border-radius: 1vw;
+      }
+
+      &__perOne {
+        font-size: 2vw;
+      }
+    }
+  }
+}

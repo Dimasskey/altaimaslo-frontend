@@ -1,0 +1,68 @@
+.users-delivery-points-admin {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 0 1vw 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.42vw;
+  overflow: hidden;
+}
+.users-delivery-points-admin-header {
+  width: 100%;
+  border-bottom: 0.1vw solid #BABABA;
+  border-radius: 0.42vw 0.42vw 0 0;
+  padding: 0.75vw 1.05vw;
+  color: #898989;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.users-delivery-points-admin-title {
+  font-size: 0.85vw;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 2fr;
+  width: 100%;
+  align-items: center;
+  font-weight: 500;
+}
+.users-delivery-points-admin-count {
+  display: flex;
+  flex-direction: row;
+  background-color: #0585D0;
+  box-shadow: 0 0 1vw 0 rgba(0, 0, 0, 0.2);
+  color: white;
+  border: none;
+  padding: 0.5vw 1.5vw;
+  gap: 1vw;
+  border-radius: 0.45vw;
+  font-size: 0.75vw;
+  flex-shrink: 0;
+  align-items: center;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.users-delivery-points-admin-count > div {
+  padding: 0.35vw 0.7vw;
+  color: #4B4B4B;
+  background-color: white;
+  border-radius: 0.45vw;
+  width: fit-content;
+  font-weight: 600;
+  word-break: break-word;
+}
+.users-delivery-points-admin-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 5vw;
+  align-items: center;
+  justify-content: center;
+}
+.users-delivery-points-admin-empty {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5vw;
+  color: #4B4B4B;
+  width: 100%;
+}
+
+/*# sourceMappingURL=usersDeliverePointsAdminStyles.css.map */

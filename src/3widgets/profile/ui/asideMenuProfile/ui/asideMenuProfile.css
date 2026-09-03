@@ -1,0 +1,60 @@
+/* Error: Undefined mixin.
+ *     ,
+ * 60  | /   @include respond(mobile) {
+ * 61  | |     width: 100%;
+ * 62  | |     height: 100dvh;
+ * 63  | |     display: flex;
+ * 64  | |     flex-direction: column;
+ * 65  | | 
+ * 66  | |     &__header {
+ * 67  | |       font-size: 2vw;
+ * 68  | |       height: auto;
+ * 69  | |       color: #7F7F7F;
+ * 70  | |       font-weight: normal;
+ * 71  | |       padding: 5vw 0 0 5vw;
+ * 72  | |       display: flex;
+ * 73  | |       gap: 1vw;
+ * 74  | |       align-items: center;
+ * 75  | |       border: none;
+ * 76  | | 
+ * 77  | |       &-icon {
+ * 78  | |         height: auto;
+ * 79  | |         width: 4vw;
+ * 80  | | 
+ * 81  | |         & path {
+ * 82  | |           fill: #0585D0;
+ * 83  | |         }
+ * 84  | |       }
+ * 85  | |     }
+ * 86  | | 
+ * 87  | |     &__menu {
+ * 88  | |       margin-top: 5vw;
+ * 89  | |       flex: 1;
+ * 90  | | 
+ * 91  | |       .menu-item {
+ * 92  | |         font-size: 2.5vw;
+ * 93  | |         height: auto;
+ * 94  | |         padding: 2.5vw 4vw;
+ * 95  | |       }
+ * 96  | |     }
+ * 97  | |     &__logout {
+ * 98  | |       font-size: 2.5vw;
+ * 99  | |       padding: 2.5vw 4vw;
+ * 100 | |       height: auto;
+ * 101 | |       margin-bottom: 5vw;
+ * 102 | |     }
+ * 103 | | 
+ * 104 | \   }
+ *     '
+ *   asideMenuProfile.scss 60:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a     \2577 \a 60  \2502  \250c    @include respond(mobile) {\a 61  \2502  \2502      width: 100%;\a 62  \2502  \2502      height: 100dvh;\a 63  \2502  \2502      display: flex;\a 64  \2502  \2502      flex-direction: column;\a 65  \2502  \2502  \a 66  \2502  \2502      &__header {\a 67  \2502  \2502        font-size: 2vw;\a 68  \2502  \2502        height: auto;\a 69  \2502  \2502        color: #7F7F7F;\a 70  \2502  \2502        font-weight: normal;\a 71  \2502  \2502        padding: 5vw 0 0 5vw;\a 72  \2502  \2502        display: flex;\a 73  \2502  \2502        gap: 1vw;\a 74  \2502  \2502        align-items: center;\a 75  \2502  \2502        border: none;\a 76  \2502  \2502  \a 77  \2502  \2502        &-icon {\a 78  \2502  \2502          height: auto;\a 79  \2502  \2502          width: 4vw;\a 80  \2502  \2502  \a 81  \2502  \2502          & path {\a 82  \2502  \2502            fill: #0585D0;\a 83  \2502  \2502          }\a 84  \2502  \2502        }\a 85  \2502  \2502      }\a 86  \2502  \2502  \a 87  \2502  \2502      &__menu {\a 88  \2502  \2502        margin-top: 5vw;\a 89  \2502  \2502        flex: 1;\a 90  \2502  \2502  \a 91  \2502  \2502        .menu-item {\a 92  \2502  \2502          font-size: 2.5vw;\a 93  \2502  \2502          height: auto;\a 94  \2502  \2502          padding: 2.5vw 4vw;\a 95  \2502  \2502        }\a 96  \2502  \2502      }\a 97  \2502  \2502      &__logout {\a 98  \2502  \2502        font-size: 2.5vw;\a 99  \2502  \2502        padding: 2.5vw 4vw;\a 100 \2502  \2502        height: auto;\a 101 \2502  \2502        margin-bottom: 5vw;\a 102 \2502  \2502      }\a 103 \2502  \2502  \a 104 \2502  \2514    }\a     \2575 \a   asideMenuProfile.scss 60:3  root stylesheet";
+}

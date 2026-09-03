@@ -1,0 +1,54 @@
+/* Error: Undefined mixin.
+ *     ,
+ * 91  | /   @include respond(mobile) {
+ * 92  | |     border-radius: 1vw;
+ * 93  | |     padding: 1.5vw 1.5vw 1.5vw 1.5vw;
+ * 94  | |     gap: 4vw;
+ * 95  | |     &-header {
+ * 96  | |       padding: 0 1.5vw;
+ * 97  | |       &__title {
+ * 98  | |         font-size: 4vw;
+ * 99  | |       }
+ * 100 | | 
+ * 101 | |       &-image {
+ * 102 | |         width: 7.5vw;
+ * 103 | |         height: 7.5vw;
+ * 104 | |       }
+ * 105 | |     }
+ * 106 | | 
+ * 107 | |     &-list {
+ * 108 | |       grid-template-columns: repeat(3, 1fr);
+ * 109 | |       gap: 2vw;
+ * 110 | |     }
+ * 111 | | 
+ * 112 | |     &-item {
+ * 113 | |       padding: 1.5vw;
+ * 114 | |       border-radius: 1vw;
+ * 115 | |       box-shadow: 0 0.1vw 0.2vw rgba(0, 0, 0, 0.05);
+ * 116 | |       gap: 1.5vw;
+ * 117 | | 
+ * 118 | |       .measure-item__name {
+ * 119 | |         font-size: 3vw;
+ * 120 | |         color: #333;
+ * 121 | |       }
+ * 122 | | 
+ * 123 | |       .measure-item__value {
+ * 124 | |         font-size: 2.5vw;
+ * 125 | |         color: #555;
+ * 126 | |         word-break: break-all;
+ * 127 | |       }
+ * 128 | |     }
+ * 129 | \   }
+ *     '
+ *   productMeasures.scss 91:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a     \2577 \a 91  \2502  \250c    @include respond(mobile) {\a 92  \2502  \2502      border-radius: 1vw;\a 93  \2502  \2502      padding: 1.5vw 1.5vw 1.5vw 1.5vw;\a 94  \2502  \2502      gap: 4vw;\a 95  \2502  \2502      &-header {\a 96  \2502  \2502        padding: 0 1.5vw;\a 97  \2502  \2502        &__title {\a 98  \2502  \2502          font-size: 4vw;\a 99  \2502  \2502        }\a 100 \2502  \2502  \a 101 \2502  \2502        &-image {\a 102 \2502  \2502          width: 7.5vw;\a 103 \2502  \2502          height: 7.5vw;\a 104 \2502  \2502        }\a 105 \2502  \2502      }\a 106 \2502  \2502  \a 107 \2502  \2502      &-list {\a 108 \2502  \2502        grid-template-columns: repeat(3, 1fr);\a 109 \2502  \2502        gap: 2vw;\a 110 \2502  \2502      }\a 111 \2502  \2502  \a 112 \2502  \2502      &-item {\a 113 \2502  \2502        padding: 1.5vw;\a 114 \2502  \2502        border-radius: 1vw;\a 115 \2502  \2502        box-shadow: 0 0.1vw 0.2vw rgba(0, 0, 0, 0.05);\a 116 \2502  \2502        gap: 1.5vw;\a 117 \2502  \2502  \a 118 \2502  \2502        .measure-item__name {\a 119 \2502  \2502          font-size: 3vw;\a 120 \2502  \2502          color: #333;\a 121 \2502  \2502        }\a 122 \2502  \2502  \a 123 \2502  \2502        .measure-item__value {\a 124 \2502  \2502          font-size: 2.5vw;\a 125 \2502  \2502          color: #555;\a 126 \2502  \2502          word-break: break-all;\a 127 \2502  \2502        }\a 128 \2502  \2502      }\a 129 \2502  \2514    }\a     \2575 \a   productMeasures.scss 91:3  root stylesheet";
+}

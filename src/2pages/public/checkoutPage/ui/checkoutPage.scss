@@ -1,0 +1,40 @@
+.checkout {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1vw;
+
+  &-details {
+    width: 49%;
+    background-color: #fff;
+    border-radius: 0.5vw;
+    padding: 1vw 1vw 2vw 1.5vw ;
+  }
+
+  &-title {
+    font-size: 1.5vw;
+  }
+
+  &-summary {
+    flex-shrink: 1;
+    width: 49%;
+    background-color: #fff;
+    border-radius: 0.5vw;
+  }
+
+  @include respond(mobile) {
+    flex-direction: column;
+
+    &-details {
+      width: 100%;
+      padding: 3vw 3.5vw 4vw 3.5vw ;
+    }
+
+    &-title {
+      font-size: 4vw;
+    }
+
+    &-summary {
+      width: 100%;
+    }
+  }
+}

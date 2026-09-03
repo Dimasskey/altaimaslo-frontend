@@ -1,0 +1,27 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 76 | /   @include respond(mobile) {
+ * 77 | | 
+ * 78 | |     width: 20vw;
+ * 79 | |     height: 6vw;
+ * 80 | |     border-radius: 1.5vw;
+ * 81 | |     gap: 1vw;
+ * 82 | |     &.added {
+ * 83 | |       .button-default__img1 {
+ * 84 | |         width: 4vw;
+ * 85 | |       }
+ * 86 | |     }
+ * 87 | \   }
+ *    '
+ *   addToCartButton.scss 76:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 76 \2502  \250c    @include respond(mobile) {\a 77 \2502  \2502  \a 78 \2502  \2502      width: 20vw;\a 79 \2502  \2502      height: 6vw;\a 80 \2502  \2502      border-radius: 1.5vw;\a 81 \2502  \2502      gap: 1vw;\a 82 \2502  \2502      &.added {\a 83 \2502  \2502        .button-default__img1 {\a 84 \2502  \2502          width: 4vw;\a 85 \2502  \2502        }\a 86 \2502  \2502      }\a 87 \2502  \2514    }\a    \2575 \a   addToCartButton.scss 76:3  root stylesheet";
+}

@@ -1,0 +1,48 @@
+/* Error: Undefined mixin.
+ *     ,
+ * 77  | /   @include respond(mobile) {
+ * 78  | |     padding-right: 2.5vw;
+ * 79  | |     height: 30vw;
+ * 80  | |     .item-info {
+ * 81  | |       &-image {
+ * 82  | |         width: 35%;
+ * 83  | |         &__img {
+ * 84  | |           //width: auto;
+ * 85  | |           //height: 17vw;
+ * 86  | |         }
+ * 87  | |       }
+ * 88  | | 
+ * 89  | |       &-description {
+ * 90  | |         width: 65%;
+ * 91  | |         flex-direction: column;
+ * 92  | | 
+ * 93  | |         .info-description__name {
+ * 94  | |           font-size: 2vw;
+ * 95  | |         }
+ * 96  | | 
+ * 97  | |         .cart-actions {
+ * 98  | |           width: 100%;
+ * 99  | |         }
+ * 100 | |       }
+ * 101 | |     }
+ * 102 | |     .stock_status-small {
+ * 103 | |       font-size: 1.5vw;
+ * 104 | |     }
+ * 105 | | 
+ * 106 | |     .stock_status-big {
+ * 107 | |       font-size: 2.5vw;
+ * 108 | |     }
+ * 109 | \   }
+ *     '
+ *   CartItem.scss 77:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a     \2577 \a 77  \2502  \250c    @include respond(mobile) {\a 78  \2502  \2502      padding-right: 2.5vw;\a 79  \2502  \2502      height: 30vw;\a 80  \2502  \2502      .item-info {\a 81  \2502  \2502        &-image {\a 82  \2502  \2502          width: 35%;\a 83  \2502  \2502          &__img {\a 84  \2502  \2502            //width: auto;\a 85  \2502  \2502            //height: 17vw;\a 86  \2502  \2502          }\a 87  \2502  \2502        }\a 88  \2502  \2502  \a 89  \2502  \2502        &-description {\a 90  \2502  \2502          width: 65%;\a 91  \2502  \2502          flex-direction: column;\a 92  \2502  \2502  \a 93  \2502  \2502          .info-description__name {\a 94  \2502  \2502            font-size: 2vw;\a 95  \2502  \2502          }\a 96  \2502  \2502  \a 97  \2502  \2502          .cart-actions {\a 98  \2502  \2502            width: 100%;\a 99  \2502  \2502          }\a 100 \2502  \2502        }\a 101 \2502  \2502      }\a 102 \2502  \2502      .stock_status-small {\a 103 \2502  \2502        font-size: 1.5vw;\a 104 \2502  \2502      }\a 105 \2502  \2502  \a 106 \2502  \2502      .stock_status-big {\a 107 \2502  \2502        font-size: 2.5vw;\a 108 \2502  \2502      }\a 109 \2502  \2514    }\a     \2575 \a   CartItem.scss 77:3  root stylesheet";
+}

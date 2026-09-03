@@ -1,0 +1,74 @@
+/* Error: Undefined mixin.
+ *     ,
+ * 74  | /   @include respond(mobile) {
+ * 75  | |     flex-direction: column;
+ * 76  | |     justify-content: center;
+ * 77  | | 
+ * 78  | |     .item-actions-moderated {
+ * 79  | |       display: flex;
+ * 80  | |       justify-content: flex-start;
+ * 81  | |       padding: 1.5vw 1.5vw 0 3.25vw;
+ * 82  | |       &__value {
+ * 83  | |         padding: 1.25vw 2vw 1.25vw 2vw;
+ * 84  | |         border-radius: 1vw;
+ * 85  | |         font-size: 2vw;
+ * 86  | | 
+ * 87  | |         &.moderated {
+ * 88  | |           background-color: #1DB8DA;
+ * 89  | |           color: #fff;
+ * 90  | |         }
+ * 91  | | 
+ * 92  | |         &.not-moderated {
+ * 93  | |           background-color: #cacaca;
+ * 94  | |           color: #fff;
+ * 95  | |         }
+ * 96  | |       }
+ * 97  | |     }
+ * 98  | | 
+ * 99  | |     &-info {
+ * 100 | |       display: flex;
+ * 101 | |       align-items: center;
+ * 102 | |       padding: 2.5vw 1.5vw 0 3.25vw;
+ * 103 | |       gap: 2vw;
+ * 104 | |       font-size: 2vw;
+ * 105 | |       word-break: break-all;
+ * 106 | |       width: 95%;
+ * 107 | |       .item-info {
+ * 108 | |         gap: 1vw;
+ * 109 | |       }
+ * 110 | |     }
+ * 111 | | 
+ * 112 | |     &-actions {
+ * 113 | |       display: flex;
+ * 114 | |       flex-direction: column;
+ * 115 | |       gap: 1vw;
+ * 116 | |       padding-right: 0;
+ * 117 | | 
+ * 118 | | 
+ * 119 | |       .item-actions-buttons {
+ * 120 | |         display: flex;
+ * 121 | |         justify-content: space-between;
+ * 122 | |         padding: 3vw 5vw 2vw 3.25vw;
+ * 123 | |         .actions-button__edit {
+ * 124 | |           font-size: 3vw;
+ * 125 | |         }
+ * 126 | | 
+ * 127 | |         .actions-button__delete {
+ * 128 | |           font-size: 3vw;
+ * 129 | |         }
+ * 130 | |       }
+ * 131 | |     }
+ * 132 | \   }
+ *     '
+ *   addressItem.scss 74:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a     \2577 \a 74  \2502  \250c    @include respond(mobile) {\a 75  \2502  \2502      flex-direction: column;\a 76  \2502  \2502      justify-content: center;\a 77  \2502  \2502  \a 78  \2502  \2502      .item-actions-moderated {\a 79  \2502  \2502        display: flex;\a 80  \2502  \2502        justify-content: flex-start;\a 81  \2502  \2502        padding: 1.5vw 1.5vw 0 3.25vw;\a 82  \2502  \2502        &__value {\a 83  \2502  \2502          padding: 1.25vw 2vw 1.25vw 2vw;\a 84  \2502  \2502          border-radius: 1vw;\a 85  \2502  \2502          font-size: 2vw;\a 86  \2502  \2502  \a 87  \2502  \2502          &.moderated {\a 88  \2502  \2502            background-color: #1DB8DA;\a 89  \2502  \2502            color: #fff;\a 90  \2502  \2502          }\a 91  \2502  \2502  \a 92  \2502  \2502          &.not-moderated {\a 93  \2502  \2502            background-color: #cacaca;\a 94  \2502  \2502            color: #fff;\a 95  \2502  \2502          }\a 96  \2502  \2502        }\a 97  \2502  \2502      }\a 98  \2502  \2502  \a 99  \2502  \2502      &-info {\a 100 \2502  \2502        display: flex;\a 101 \2502  \2502        align-items: center;\a 102 \2502  \2502        padding: 2.5vw 1.5vw 0 3.25vw;\a 103 \2502  \2502        gap: 2vw;\a 104 \2502  \2502        font-size: 2vw;\a 105 \2502  \2502        word-break: break-all;\a 106 \2502  \2502        width: 95%;\a 107 \2502  \2502        .item-info {\a 108 \2502  \2502          gap: 1vw;\a 109 \2502  \2502        }\a 110 \2502  \2502      }\a 111 \2502  \2502  \a 112 \2502  \2502      &-actions {\a 113 \2502  \2502        display: flex;\a 114 \2502  \2502        flex-direction: column;\a 115 \2502  \2502        gap: 1vw;\a 116 \2502  \2502        padding-right: 0;\a 117 \2502  \2502  \a 118 \2502  \2502  \a 119 \2502  \2502        .item-actions-buttons {\a 120 \2502  \2502          display: flex;\a 121 \2502  \2502          justify-content: space-between;\a 122 \2502  \2502          padding: 3vw 5vw 2vw 3.25vw;\a 123 \2502  \2502          .actions-button__edit {\a 124 \2502  \2502            font-size: 3vw;\a 125 \2502  \2502          }\a 126 \2502  \2502  \a 127 \2502  \2502          .actions-button__delete {\a 128 \2502  \2502            font-size: 3vw;\a 129 \2502  \2502          }\a 130 \2502  \2502        }\a 131 \2502  \2502      }\a 132 \2502  \2514    }\a     \2575 \a   addressItem.scss 74:3  root stylesheet";
+}

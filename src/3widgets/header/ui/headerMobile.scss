@@ -1,0 +1,64 @@
+.header-mobile {
+  position: sticky;
+  background-color: #fff;
+  height: 15vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 3vw;
+  overflow: hidden;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 0.15vw 1.5vw 0 #0000004d;;
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    &.hide {
+      opacity: 0;
+      transform: translateX(20%);
+      pointer-events: none;
+    }
+  }
+  &-left {
+    display: flex;
+    gap: 3vw;
+  }
+
+  &-right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 15vw;
+  }
+
+  &-search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
+    gap: 3vw;
+
+    opacity: 0;
+    transform: translateX(30%);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    &.show {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+  }
+}

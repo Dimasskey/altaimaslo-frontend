@@ -1,0 +1,45 @@
+.header-actions-mobile {
+  display: flex;
+  gap: 5vw;
+}
+.header-actions-mobile .actions-mobile__search {
+  width: 6vw;
+  height: auto;
+}
+.header-actions-mobile .actions-mobile__login {
+  width: 6vw;
+  height: auto;
+}
+.header-actions-mobile .actions-mobile__login path {
+  fill: #0585D0;
+}
+.header-actions-mobile .actions-mobile__profile {
+  width: 6vw;
+  height: auto;
+}
+.header-actions-mobile .actions-mobile__profile path {
+  fill: #0585D0;
+}
+.header-actions-mobile .header-cart {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header-actions-mobile .header-cart__count {
+  left: 3.75vw;
+  top: -1.25vw;
+  display: flex;
+  justify-content: center;
+  width: 3.5vw;
+  height: 3.5vw;
+  font-size: 2vw;
+}
+.header-actions-mobile .actions-mobile__cart {
+  width: 6vw;
+  height: auto;
+}
+.header-actions-mobile .actions-mobile__cart path {
+  fill: #0585D0;
+}
+
+/*# sourceMappingURL=headerActionsMobile.css.map */

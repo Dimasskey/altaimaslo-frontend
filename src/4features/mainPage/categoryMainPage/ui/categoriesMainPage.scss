@@ -1,0 +1,153 @@
+
+
+.categories-dropdown {
+  margin-top: 2vw;
+  @include respond(mobile) {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 1.25vw;
+
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    font-size: 0.8vw;
+    justify-content: space-around;
+  }
+
+  &__rows {
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    margin-top: 2vw;
+  }
+
+  &__error {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5vw;
+    height: 6vw;
+    background-color: #fff;
+    align-items: center;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 1vw;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 9vw;
+    height: 11vw;
+    gap: 10%;
+    transition: background-color 0.3s ease;
+    padding: 0.5%;
+    border-radius: 0.5vw;
+    margin-bottom: 1vw;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fff;
+      box-shadow: 0 0.2vw 0.4vw 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__image {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 75%;
+    object-fit: contain;
+  }
+
+  &__name {
+    height: 30%;
+    text-align: center;
+  }
+
+  &-button-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &::before {
+      background: #c7c7c7;
+      content: "";
+      display: block;
+      height: 0.1vw;
+      left: 0;
+      position: absolute;
+      top: 1.25vw;
+      width: 100%;
+    }
+  }
+
+  &__button {
+    background-color: #fff;
+    border: 0;
+    border-radius: 4vw;
+    box-shadow: 0 0.2vw 0.4vw 0 rgba(0, 0, 0, 0.15);
+    color: #6f6f6f;
+    cursor: pointer;
+    font-size: 0.75vw;
+    height: 2.5vw;
+    padding: 0 1vw 0 1vw;
+    position: relative;
+    transition: all 0.1s ease 0s;
+    z-index: 1;
+    outline: 0;
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  @include respond(mobile) {
+    &__title {
+      font-size: 3vw;
+    }
+
+    &__row {
+      grid-template-columns: repeat(3, 1fr);
+      font-size: 2.5vw;
+      justify-items: center;
+    }
+
+    &__item {
+      width: 90%;
+      height: 35vw;
+      border-radius: 1.5vw;
+    }
+
+    &-button-wrapper {
+      &::before {
+        height: 0.5vw;
+        top: 3.25vw;
+      }
+    }
+
+    &__button {
+      border-radius: 4vw;
+      font-size: 2vw;
+      height: 7vw;
+      padding: 0 2vw 0 2vw;
+      position: relative;
+      transition: all 0.1s ease 0s;
+      z-index: 1;
+      outline: 0;
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+}

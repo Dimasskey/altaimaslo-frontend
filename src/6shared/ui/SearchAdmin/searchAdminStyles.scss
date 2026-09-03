@@ -1,0 +1,32 @@
+.search-header-admin {
+  width: 50%;
+  background-color: #e0e0e0;
+  border-radius: 0.5vw;
+  display: flex;
+  align-items: center;
+  padding: 0.5vw 1.25vw 0.5vw 1.25vw;
+
+
+  &__input {
+    border: none;
+    background-color: #e0e0e0;
+    width: 87.5%;
+    outline: none;
+    font-size: 0.7vw;
+
+    &::placeholder {
+      color: #7F7F7F;
+    }
+  }
+
+  &__button {
+    background-color: #ffffff;
+    color: #7F7F7F;
+    padding: 0.25vw 1vw 0.25vw 1vw;
+    border-radius: 0.5vw;
+    border: none;
+    font-size: 0.65vw;
+    cursor: pointer;
+  }
+
+}

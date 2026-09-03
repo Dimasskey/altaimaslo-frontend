@@ -1,0 +1,150 @@
+.header-actions {
+  display: flex;
+  color: #7F7F7F;
+  font-size: 0.7vw;
+  gap: 1vw;
+  width: 13vw;
+  overflow: visible;
+  justify-content: flex-end;
+}
+
+.header-favorites {
+  position: relative;
+
+  .favorite-icon {
+    width: 1.15vw;
+    height: 100%;
+
+    &:hover path {
+      fill: var(--button-color);
+    }
+
+    &:active path {
+      fill: var(--button-color-active);
+    }
+  }
+
+
+
+  &__count {
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    font-size: 0.65vw;
+    width: 1.1vw;
+    height: 1.1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -0.7vw;
+    left: 0.9vw;
+  }
+}
+
+
+
+.header-login {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  cursor: pointer;
+  transition: color 0.5s ease, fill 0.5s ease;
+
+  &__icon {
+    width: 1.5vw;
+    height: 100%;
+  }
+
+  &:hover {
+    color: var(--button-color);
+  }
+
+  &:hover &__icon path {
+    fill: currentColor;
+  }
+
+  &:active {
+    color: var(--button-color-active);
+  }
+
+  &:active &__icon path {
+    fill: currentColor;
+  }
+
+}
+
+.header-cart {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  position: relative;
+  cursor: pointer;
+  color: #7F7F7F;
+  transition: color 0.5s ease, fill 0.5s ease;
+
+  &__icon {
+    width: 1.45vw;
+    height: 100%;
+  }
+
+  &:hover {
+    color: var(--button-color);
+  }
+
+  &:hover &__icon path {
+    fill: currentColor;
+  }
+
+  &:active {
+    color: var(--button-color-active);
+  }
+
+  &:active &__icon path {
+    fill: currentColor;
+  }
+
+  &__count {
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    font-size: 0.65vw;
+    width: 1.1vw;
+    height: 1.1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -0.7vw;
+    left: 1.1vw;
+  }
+}
+
+.header-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  color: #7F7F7F;
+  transition: color 0.5s ease, fill 0.5s ease;
+
+  &__icon {
+    width: 1.45vw;
+    height: 100%;
+  }
+
+  &:hover {
+    color: var(--button-color);
+  }
+
+  &:hover &__icon path {
+    fill: currentColor;
+  }
+
+  &:active {
+    color: var(--button-color-active);
+  }
+
+  &:active &__icon path {
+    fill: currentColor;
+  }
+}

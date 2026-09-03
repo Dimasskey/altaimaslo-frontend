@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import "../../../../../WebstormProjects/es/src/styles/zero.css";
+:root {
+  --button-color: #019fff;
+  --button-color-active: #0769a5;
+  --item-color:#f4f4f4;
+  --item-color-hover: #dadada;
+  --item-color-active: #bdbdbd;
+  --item-border-color: rgba(151, 151, 151, 0.68);
+}
+
+/* Глобальный класс для эффекта загрузки */
+.loading,
+.loaded {
+  position: relative;
+  overflow: hidden;
+}
+.loading::after,
+.loaded::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, #d6d6d6 25%, #c5c5c5 50%, #f1f1f1 75%);
+  background-size: 500% 300%;
+  animation: smooth-diagonal 1.5s linear infinite;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 1;
+  transform: scale(1);
+  filter: blur(0);
+  border-radius: 0.25vw;
+  transition: none;
+}
+
+.loaded::after {
+  opacity: 0;
+  filter: blur(4px);
+  animation-play-state: paused;
+  transition: opacity 0.8s ease, transform 0.8s ease, filter 0.8s ease;
+}
+
+@keyframes smooth-diagonal {
+  0% {
+    background-position: 100% 100%;
+  }
+  50% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+.categories-content {
+  margin-top: 0.85vw;
+  display: flex;
+  gap: 1.25vw;
+}
+@media (max-width: 768px) {
+  .categories-content {
+    margin-top: 2vw;
+  }
+}
+
+.categories-main {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+@media (max-width: 768px) {
+  .categories-main {
+    width: 100%;
+  }
+}
+
+.profile-container {
+  margin-top: 1vw;
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+@media (max-width: 768px) {
+  .profile-container {
+    margin-top: 2vw;
+  }
+}
+
+@font-face {
+  font-family: "inter_bold";
+  src: url("@fonts/Inter_Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "inter_medium";
+  src: url("@fonts/Inter_Medium.ttf") format("truetype");
+}
+* {
+  font-family: inter_medium, inter_bold, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 55.5555555556vw;
+  margin: 0 auto;
+  background-color: #E6E6E6;
+}
+@media (max-width: 768px) {
+  body {
+    max-width: 100%;
+  }
+}
+
+.body-admin {
+  max-width: 68.9655172414vw;
+}
+
+/*# sourceMappingURL=mainStyle.css.map */

@@ -1,0 +1,39 @@
+.stock_status {
+  position: absolute;
+  background-color: var(--button-color);
+  color: white;
+  text-align: center;
+  padding: 0.3vw 0.5vw;
+  line-height: 1.15;
+  border-radius: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  top: 1vw;
+  left: 1vw;
+  z-index: 10;
+
+  &-big {
+    font-size: 0.85vw;
+  }
+
+  &-small {
+    font-size: 0.65vw;
+  }
+
+  &.out-of-stock {
+    background-color: #818181;
+  }
+
+  @include respond(mobile) {
+    border-radius: 1.5vw;
+    padding: 0.7vw 1.5vw;
+
+    &-big {
+      font-size: 3vw;
+    }
+
+    &-small {
+      font-size: 2vw;
+    }
+  }
+}

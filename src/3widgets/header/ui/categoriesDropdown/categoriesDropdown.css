@@ -1,0 +1,74 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 41 | /   @include respond(mobile) {
+ * 42 | |     .categories-dropdown__title {
+ * 43 | |       display: flex;
+ * 44 | |       font-size: 5vw;
+ * 45 | |       color: #4B4B4B;
+ * 46 | |       padding: 4vw 0 0 5vw;
+ * 47 | |       font-weight: bold;
+ * 48 | |       margin-bottom: 3vw;
+ * 49 | |     }
+ * 50 | | 
+ * 51 | |     &-items {
+ * 52 | |       display: flex;
+ * 53 | |       flex-direction: column;
+ * 54 | |       gap: 0;
+ * 55 | |       max-height: 82dvh;
+ * 56 | |       overflow-y: scroll;
+ * 57 | |       //padding-bottom: 5vw;
+ * 58 | | 
+ * 59 | |       -webkit-overflow-scrolling: touch;
+ * 60 | | 
+ * 61 | |       &::-webkit-scrollbar {
+ * 62 | |         width: 2vw;
+ * 63 | |       }
+ * 64 | | 
+ * 65 | |       &::-webkit-scrollbar-track {
+ * 66 | |         background: transparent;
+ * 67 | |         border-radius: 2vw;
+ * 68 | |       }
+ * 69 | | 
+ * 70 | |       &::-webkit-scrollbar-thumb {
+ * 71 | |         background: rgba(0, 0, 0, 0.2);
+ * 72 | |         border-radius: 2vw;
+ * 73 | |         transition: background 0.3s ease;
+ * 74 | |       }
+ * 75 | | 
+ * 76 | |       &::-webkit-scrollbar-thumb:hover {
+ * 77 | |         background: rgba(0, 0, 0, 0.4);
+ * 78 | |       }
+ * 79 | | 
+ * 80 | | 
+ * 81 | |     }
+ * 82 | | 
+ * 83 | |     &__item {
+ * 84 | |       width: 100%;
+ * 85 | |       padding: 2.75vw 7vw;
+ * 86 | |       gap: 2vw;
+ * 87 | |       flex-shrink: 0;
+ * 88 | |     }
+ * 89 | | 
+ * 90 | |     &__image {
+ * 91 | |       height: 5vw;
+ * 92 | |       width: 5vw;
+ * 93 | |     }
+ * 94 | | 
+ * 95 | |     &__name {
+ * 96 | |       font-size: 3vw;
+ * 97 | |       color: #4B4B4B;
+ * 98 | |     }
+ * 99 | \   }
+ *    '
+ *   categoriesDropdown.scss 41:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 41 \2502  \250c    @include respond(mobile) {\a 42 \2502  \2502      .categories-dropdown__title {\a 43 \2502  \2502        display: flex;\a 44 \2502  \2502        font-size: 5vw;\a 45 \2502  \2502        color: #4B4B4B;\a 46 \2502  \2502        padding: 4vw 0 0 5vw;\a 47 \2502  \2502        font-weight: bold;\a 48 \2502  \2502        margin-bottom: 3vw;\a 49 \2502  \2502      }\a 50 \2502  \2502  \a 51 \2502  \2502      &-items {\a 52 \2502  \2502        display: flex;\a 53 \2502  \2502        flex-direction: column;\a 54 \2502  \2502        gap: 0;\a 55 \2502  \2502        max-height: 82dvh;\a 56 \2502  \2502        overflow-y: scroll;\a 57 \2502  \2502        //padding-bottom: 5vw;\a 58 \2502  \2502  \a 59 \2502  \2502        -webkit-overflow-scrolling: touch;\a 60 \2502  \2502  \a 61 \2502  \2502        &::-webkit-scrollbar {\a 62 \2502  \2502          width: 2vw;\a 63 \2502  \2502        }\a 64 \2502  \2502  \a 65 \2502  \2502        &::-webkit-scrollbar-track {\a 66 \2502  \2502          background: transparent;\a 67 \2502  \2502          border-radius: 2vw;\a 68 \2502  \2502        }\a 69 \2502  \2502  \a 70 \2502  \2502        &::-webkit-scrollbar-thumb {\a 71 \2502  \2502          background: rgba(0, 0, 0, 0.2);\a 72 \2502  \2502          border-radius: 2vw;\a 73 \2502  \2502          transition: background 0.3s ease;\a 74 \2502  \2502        }\a 75 \2502  \2502  \a 76 \2502  \2502        &::-webkit-scrollbar-thumb:hover {\a 77 \2502  \2502          background: rgba(0, 0, 0, 0.4);\a 78 \2502  \2502        }\a 79 \2502  \2502  \a 80 \2502  \2502  \a 81 \2502  \2502      }\a 82 \2502  \2502  \a 83 \2502  \2502      &__item {\a 84 \2502  \2502        width: 100%;\a 85 \2502  \2502        padding: 2.75vw 7vw;\a 86 \2502  \2502        gap: 2vw;\a 87 \2502  \2502        flex-shrink: 0;\a 88 \2502  \2502      }\a 89 \2502  \2502  \a 90 \2502  \2502      &__image {\a 91 \2502  \2502        height: 5vw;\a 92 \2502  \2502        width: 5vw;\a 93 \2502  \2502      }\a 94 \2502  \2502  \a 95 \2502  \2502      &__name {\a 96 \2502  \2502        font-size: 3vw;\a 97 \2502  \2502        color: #4B4B4B;\a 98 \2502  \2502      }\a 99 \2502  \2514    }\a    \2575 \a   categoriesDropdown.scss 41:3  root stylesheet";
+}

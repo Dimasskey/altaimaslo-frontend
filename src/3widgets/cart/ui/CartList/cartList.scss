@@ -1,0 +1,44 @@
+.cart {
+  background-color: #fff;
+  border-radius: 0.5vw 0.5vw 0 0;
+  width: 70%;
+  height: fit-content;
+
+  &-header {
+    height: 3.15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.4vw 0 1.8vw;
+
+    &__title {
+      font-size: 1.3vw;
+    }
+
+    &__clear {
+      font-size: 0.8vw;
+      border: none;
+      background-color: #fff;
+      cursor: pointer;
+      color: #096EBC;
+    }
+  }
+
+  @include respond(mobile) {
+    width: 100%;
+    margin-bottom: 1vw;
+
+    &-header {
+      height: 6vw;
+      padding: 0 3vw 0 3.5vw;
+
+      &__title {
+        font-size: 3vw;
+      }
+
+      &__clear {
+        font-size: 2.5vw;
+      }
+    }
+  }
+}

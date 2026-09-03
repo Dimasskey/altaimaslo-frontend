@@ -1,0 +1,14 @@
+.slate-editor {
+  border: 0.1vw solid #e0e0e0;
+  border-radius: 0.25vw;
+  overflow: hidden;
+}
+.slate-editor__content {
+  min-height: 20vw;
+  padding: 0.1vw 1vw;
+  font-size: 0.8vw;
+  line-height: 1.1vw;
+  outline: none;
+}
+
+/*# sourceMappingURL=SlateEditorStyles.css.map */

@@ -1,0 +1,42 @@
+.aside_menu {
+  padding: 0.85vw 0;
+  background-color: white;
+  width: 17vw;
+  box-shadow: 0 0 1vw 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.75vw;
+  height: max-content;
+}
+.aside_menu-title {
+  font-weight: 500;
+  font-size: 1.1vw;
+  padding: 0 0.9vw;
+  margin-bottom: 0.75vw;
+  color: #4B4B4B;
+}
+.aside_menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+.aside_menu-item {
+  padding: 0.75vw 0.9vw;
+  cursor: pointer;
+  font-size: 0.9vw;
+  font-weight: 500;
+  color: #4B4B4B;
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  align-items: center;
+}
+.aside_menu-item.active {
+  background-color: var(--item-color-active);
+}
+.aside_menu-item:hover {
+  background-color: var(--item-color-hover);
+}
+.aside_menu-item:active {
+  background-color: var(--item-color-active);
+}
+
+/*# sourceMappingURL=asideMenuAdminStyles.css.map */

@@ -1,0 +1,57 @@
+.order-progress {
+  width: 100%;
+  height: 2.5vw;
+  background-color: #AAA;
+  color: #fff;
+  border-radius: 0.5vw;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+
+  &-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25vw;
+    background-color: #096EBC;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  &-text {
+    z-index: 10;
+    font-size: 0.8vw;
+  }
+
+  @include respond(mobile) {
+    height: 10vw;
+    border-radius: 1vw;
+    width: 70%;
+
+    &-text {
+      font-size: 4vw;
+    }
+  }
+}
+
+.order-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #096EBC;
+  color: #fff;
+  height: 2.5vw;
+  border: none;
+  font-size: 0.9vw;
+
+  @include respond(mobile) {
+    height: 10vw;
+    border-radius: 1vw;
+    font-size: 4vw;
+    width: 70%;
+  }
+}

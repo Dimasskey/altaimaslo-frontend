@@ -1,0 +1,49 @@
+.item-actions-buttons {
+  grid-area: buttons;
+  display: flex;
+  gap: 1.25vw;
+  align-items: center;
+  justify-content: flex-end;
+
+  .product-card-favorite {
+    position: static;
+    right: 0;
+
+    &__icon {
+      width: 1.5vw;
+      height: auto;
+    }
+  }
+
+  &__trash {
+    &-icon {
+      width: 1.5vw;
+      height: auto;
+      cursor: pointer;
+
+
+      &:hover path {
+        fill: #0585D0;
+      }
+    }
+  }
+
+  @include respond(mobile) {
+    gap: 5vw;
+    justify-content: center;
+    .product-card-favorite {
+      &__icon {
+        width: 6vw;
+        height: auto;
+      }
+    }
+
+    &__trash {
+      &-icon {
+        width: 6vw;
+        height: auto;
+        cursor: pointer;
+      }
+    }
+  }
+}

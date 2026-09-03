@@ -1,0 +1,82 @@
+@use 'mixins' as *;
+
+/* Глобальный класс для эффекта загрузки */
+.loading,
+.loaded {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+                    45deg,
+                    #d6d6d6 25%,
+                    #c5c5c5 50%,
+                    #f1f1f1 75%
+    );
+    background-size: 500% 300%;
+    animation: smooth-diagonal 1.5s linear infinite;
+    z-index: 10;
+    pointer-events: none;
+
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+    border-radius: 0.25vw;
+
+    transition: none;
+  }
+}
+
+.loaded::after {
+  opacity: 0;
+  filter: blur(4px);
+  animation-play-state: paused;
+
+
+  transition:
+          opacity 0.8s ease,
+          transform 0.8s ease,
+          filter 0.8s ease;
+}
+
+@keyframes smooth-diagonal {
+  0% { background-position: 100% 100%; }
+  50% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+
+.categories-content {
+  margin-top: 0.85vw;
+  display: flex;
+  gap: 1.25vw;
+
+  @include respond(mobile) {
+    margin-top: 2vw;
+  }
+}
+
+.categories-main {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+
+  @include respond(mobile) {
+    width: 100%;
+  }
+}
+
+.profile-container {
+  margin-top: 1vw;
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+
+  @include respond(mobile) {
+    margin-top: 2vw;
+  }
+}
+

@@ -1,0 +1,48 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 42 | /   @include respond(mobile) {
+ * 43 | |     border-top: 1.5vw solid #E6E6E6;
+ * 44 | |     border-bottom: 0;
+ * 45 | |     gap: 2vw;
+ * 46 | | 
+ * 47 | |     &__title {
+ * 48 | |       font-size: 3vw;
+ * 49 | |       padding: 3vw 3.5vw 0 3.5vw ;
+ * 50 | |     }
+ * 51 | | 
+ * 52 | |     &__total-title {
+ * 53 | |       font-size: 2.5vw;
+ * 54 | |       padding: 0 3.5vw 0 3.5vw ;
+ * 55 | |     }
+ * 56 | | 
+ * 57 | |     &-total {
+ * 58 | |       display: flex;
+ * 59 | |       flex-direction: row;
+ * 60 | |       justify-content: space-between;
+ * 61 | |       align-items: center;
+ * 62 | |       padding: 0 3.5vw 4vw 3.5vw;
+ * 63 | | 
+ * 64 | |       &__value {
+ * 65 | |         font-size: 3vw;
+ * 66 | |       }
+ * 67 | | 
+ * 68 | |       &__button {
+ * 69 | |         padding: 1.5vw 5vw;
+ * 70 | |         font-size: 2.5vw;
+ * 71 | |         border-radius: 1vw;
+ * 72 | |       }
+ * 73 | |     }
+ * 74 | \   }
+ *    '
+ *   orderSummary.scss 42:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 42 \2502  \250c    @include respond(mobile) {\a 43 \2502  \2502      border-top: 1.5vw solid #E6E6E6;\a 44 \2502  \2502      border-bottom: 0;\a 45 \2502  \2502      gap: 2vw;\a 46 \2502  \2502  \a 47 \2502  \2502      &__title {\a 48 \2502  \2502        font-size: 3vw;\a 49 \2502  \2502        padding: 3vw 3.5vw 0 3.5vw ;\a 50 \2502  \2502      }\a 51 \2502  \2502  \a 52 \2502  \2502      &__total-title {\a 53 \2502  \2502        font-size: 2.5vw;\a 54 \2502  \2502        padding: 0 3.5vw 0 3.5vw ;\a 55 \2502  \2502      }\a 56 \2502  \2502  \a 57 \2502  \2502      &-total {\a 58 \2502  \2502        display: flex;\a 59 \2502  \2502        flex-direction: row;\a 60 \2502  \2502        justify-content: space-between;\a 61 \2502  \2502        align-items: center;\a 62 \2502  \2502        padding: 0 3.5vw 4vw 3.5vw;\a 63 \2502  \2502  \a 64 \2502  \2502        &__value {\a 65 \2502  \2502          font-size: 3vw;\a 66 \2502  \2502        }\a 67 \2502  \2502  \a 68 \2502  \2502        &__button {\a 69 \2502  \2502          padding: 1.5vw 5vw;\a 70 \2502  \2502          font-size: 2.5vw;\a 71 \2502  \2502          border-radius: 1vw;\a 72 \2502  \2502        }\a 73 \2502  \2502      }\a 74 \2502  \2514    }\a    \2575 \a   orderSummary.scss 42:3  root stylesheet";
+}
