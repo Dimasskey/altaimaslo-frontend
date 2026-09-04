@@ -8,23 +8,27 @@ This repository contains the customer-facing part of an e-commerce platform. The
 
 ### Home Page
 
-
+![home](./screenshots/home.png)
 
 ### Product Catalog
 
-
+![catalog](./screenshots/catalog.png)
 
 ### Shopping Cart
 
-
+![cart](./screenshots/cart.png)
 
 ### Checkout
 
-
+![checkout](./screenshots/checkout.png)
 
 ### User Profile
 
+#### Orders
+![profile orders](./screenshots/profileOrders.png)
 
+#### Favorites
+![profile favorites](./screenshots/profileFavorites.png)
 
 ## Features
 
