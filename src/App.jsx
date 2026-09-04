@@ -1,7 +1,7 @@
-import Routing from "@/1app/routing/routing";
+import Routing from "@/app/routing/routing";
 import {BrowserRouter} from "react-router-dom";
-import {AuthProvider} from "@/1app/providers/authProvider/authProvider";
-import {StatusModalProvider} from "@/1app/providers/statusModalProvider/statusModalProvider";
+import {AuthProvider} from "@/app/providers/authProvider/authProvider";
+import {StatusModalProvider} from "@/app/providers/statusModalProvider/statusModalProvider";
 import {StoreProvider} from "@shared/providers/StoreProvider";
 
 

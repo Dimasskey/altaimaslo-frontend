@@ -11,11 +11,11 @@ export default defineConfig({
       // eslint-disable-next-line no-undef
       '@': path.resolve(__dirname, './src'),
       // eslint-disable-next-line no-undef
-      '@shared': path.resolve(__dirname, './src/6shared'),
+      '@shared': path.resolve(__dirname, './src/shared'),
       // eslint-disable-next-line no-undef
-      '@fonts': path.resolve(__dirname, './src/1app/fonts'),
+      '@fonts': path.resolve(__dirname, './src/app/fonts'),
         // eslint-disable-next-line no-undef
-        '@styles': path.resolve(__dirname, './src/1app/styles'),
+        '@styles': path.resolve(__dirname, './src/app/styles'),
     }
   },
   assetsInclude: ['**/*.ttf', '**/*.png', '**/*.ico', '**/*.svg'],
